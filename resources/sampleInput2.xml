@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="MacRoman" ?>
+<PubmedArticleSet  gate:gateId="0" gate:annotMaxId="436" xmlns:gate="http://www.gate.ac.uk"><PubmedArticle gate:gateId="1"><MedlineCitation gate:gateId="2" Status="MEDLINE" Owner="NLM"><PMID gate:gateId="3" Version="1">20386003</PMID>
+        <DateCreated gate:gateId="4">
+            <Year gate:gateId="5">2010</Year>
+            <Month gate:gateId="6">04</Month>
+            <Day gate:gateId="7">13</Day></DateCreated>
+        
+        <DateCompleted gate:gateId="8">
+            <Year gate:gateId="9">2010</Year>
+            <Month gate:gateId="10">05</Month>
+            <Day gate:gateId="11">03</Day></DateCompleted>
+        
+        <DateRevised gate:gateId="12">
+            <Year gate:gateId="13">2011</Year>
+            <Month gate:gateId="14">09</Month>
+            <Day gate:gateId="15">20</Day></DateRevised>
+        
+        <Article gate:gateId="16" PubModel="Print">
+            <Journal gate:gateId="17">
+                <ISSN gate:gateId="18" IssnType="Electronic">1538-3679</ISSN>
+                <JournalIssue gate:gateId="19" CitedMedium="Internet">
+                    <Volume gate:gateId="20">170</Volume>
+                    <Issue gate:gateId="21">7</Issue>
+                    <PubDate gate:gateId="22">
+                        <Year gate:gateId="23">2010</Year>
+                        <Month gate:gateId="24">Apr</Month>
+                        <Day gate:gateId="25">12</Day></PubDate></JournalIssue>
+                    
+                
+                <Title gate:gateId="26">Archives of internal medicine</Title>
+                <ISOAbbreviation gate:gateId="27">Arch. Intern. Med.</ISOAbbreviation></Journal>
+            
+            <ArticleTitle gate:gateId="28">Enhanced depression care for <population gate:gateId="410">patients</population> <condition gate:gateId="425" id="0">with acute coronary syndrome</condition> and <condition gate:gateId="426" id="1">persistent depressive symptoms</condition> : coronary psychosocial evaluation studies randomized controlled trial.</ArticleTitle>
+            <Pagination gate:gateId="29">
+                <MedlinePgn gate:gateId="30">600-8</MedlinePgn></Pagination>
+            
+            <Abstract gate:gateId="31">
+                <AbstractText gate:gateId="32" NlmCategory="BACKGROUND" Label="BACKGROUND">Depressive symptoms are an established predictor of mortality and major adverse cardiac events (defined as nonfatal myocardial infarction or hospitalization for unstable angina or urgent/emergency revascularizations) in <population gate:gateId="409">patients</population> <condition gate:gateId="361" id="0">with acute coronary syndrome ( <short gate:gateId="372">ACS</short> )</condition> . This study was conducted to determine the acceptability and efficacy of enhanced depression treatment in <population gate:gateId="411" safe.regex="true">patients</population> <condition gate:gateId="373" id="0">with ACS</condition> .</AbstractText>
+                <AbstractText gate:gateId="33" NlmCategory="METHODS" Label="METHODS">A <time gate:gateId="428" id="1" units="months">3-month</time> observation period to identify <population gate:gateId="412" safe.regex="true">patients</population> <condition gate:gateId="374" id="0">with ACS</condition> and <condition gate:gateId="375" id="1">persistent depressive symptoms</condition> was followed by a <time gate:gateId="427" id="0" units="months">6-month</time> randomized controlled trial. From January 1, 2005, through February 29, 2008, 237 <population gate:gateId="413" safe.regex="true">patients</population> <condition gate:gateId="429" id="0">with ACS</condition> from 5 hospitals were enrolled, including 157 persistently depressed <population gate:gateId="414" safe.regex="true">patients</population> randomized to <group gate:gateId="376" id="0" role="experiment"><short gate:gateId="377">intervention</short> (initial patient preference for problem-solving therapy and/or pharmacotherapy, then a stepped-care approach</group> ; <gs gate:gateId="378" group="0" time="0">80</gs> <population gate:gateId="415" safe.regex="true">patients</population> ) or <group gate:gateId="379" id="1" role="control">usual care</group> ( <gs gate:gateId="380" group="1" time="0">77</gs> <population gate:gateId="416" safe.regex="true">patients</population> ) and <gs gate:gateId="395" group="2" time="0">80</gs> <group gate:gateId="394" id="2" role="control">nondepressed <population gate:gateId="417" safe.regex="true">patients</population></group> who underwent observational evaluation. The primary outcome was <outcome gate:gateId="381" id="0" type="good" focus="primary">patient satisfaction with depression care</outcome> . Secondary outcomes were<outcome gate:gateId="398" id="1" type="bad" focus="secondary"> depressive symptom changes (assessed with the Beck Depression Inventory)</outcome> , <outcome gate:gateId="399" type="bad" id="2" focus="secondary">major adverse cardiac events</outcome> , and <outcome gate:gateId="430" type="bad" id="3">death</outcome> .</AbstractText>
+                <AbstractText gate:gateId="34" NlmCategory="RESULTS" Label="RESULTS">At the end of the trial, <outcome gate:gateId="382" type="good" id="0" focus="primary">the proportion of <population gate:gateId="418" safe.regex="true">patients</population> who were satisfied with their depression care</outcome> was higher in the <group gate:gateId="386" id="0" role="experiment">intervention group</group> ( <eventRate gate:gateId="383" group="0" outcome="0" time="0">54%</eventRate> of <gs gate:gateId="400" group="0" outcome="0" time="0">80</gs> ) than in the <group gate:gateId="385" id="1" role="control">usual care group</group> ( <eventRate gate:gateId="384" group="1" outcome="0" time="0">19%</eventRate> of <gs gate:gateId="401" group="1" outcome="0" time="0">77</gs> ) (odds ratio, 5.4; 95% confidence interval [CI], 2.2-12.9 [P &lt; .001]). <outcome gate:gateId="390" id="1" type="bad" focus="secondary">The Beck Depression Inventory score decreased</outcome> significantly more (t(155) = 2.85 [P = .005]) for <group gate:gateId="388" id="0" role="experiment">intervention <population gate:gateId="419" safe.regex="true">patients</population></group> (change, -5.7; 95% CI, -7.6 to -3.8; df = 155) than for <group gate:gateId="389" id="1" role="control">usual care <population gate:gateId="420" safe.regex="true">patients</population></group> (change, -1.9; 95% CI, -3.8 to -0.1; df = 155); the depression effect size was 0.59 of the standard deviation. At the end of the trial, <on gate:gateId="392" group="0" outcome="2" time="0">3</on> <group gate:gateId="402" id="0" role="experiment">intervention <population gate:gateId="421" safe.regex="true">patients</population></group> and <on gate:gateId="393" group="1" outcome="2" time="0">10</on> <group gate:gateId="403" id="1" role="control">usual care <population gate:gateId="422" safe.regex="true">patients</population></group> had experienced <outcome gate:gateId="387" type="bad" id="2" focus="secondary">major adverse cardiac events</outcome> ( <eventRate gate:gateId="431" group="0" outcome="2" time="0">4%</eventRate> and <eventRate gate:gateId="432" group="1" outcome="2" time="0">13%</eventRate> , respectively; log-rank test, chi(2)(1) = 3.93 [P = .047]), as well as <on gate:gateId="396" group="2" outcome="2" time="0">5</on> <group gate:gateId="397" id="2" role="control">nondepressed <population gate:gateId="423" safe.regex="true">patients</population></group> ( <eventRate gate:gateId="433" group="2" outcome="2" time="0">6%</eventRate> ) (for <group gate:gateId="407" id="0" role="experiment">the intervention</group> vs <group gate:gateId="406" id="2" role="control">nondepressed cohor</group> t, chi(2)(1) = 0.48 [P = .49]).</AbstractText>
+                <AbstractText gate:gateId="35" NlmCategory="CONCLUSIONS" Label="CONCLUSION">Enhanced depression care for <population gate:gateId="424" safe.regex="true">patients</population> <condition gate:gateId="408" id="0">with ACS</condition> was associated <outcome gate:gateId="434" type="good" id="0">with greater satisfaction</outcome> , <outcome gate:gateId="435" type="good" id="1">a greater reduction in depressive symptoms</outcome> , and a promising improvement in prognosis.</AbstractText>
+                <AbstractText gate:gateId="36" NlmCategory="BACKGROUND" Label="TRIAL REGISTRATION">clinicaltrials.gov Identifier: NCT00158054.</AbstractText></Abstract>
+            
+            <Affiliation gate:gateId="37">Department of Medicine, Columbia University College of Physicians and Surgeons, PH9 Center, 622 W 168th St, Room 948, New York, NY 10032, USA. kd2124@columbia.edu</Affiliation>
+            <AuthorList gate:gateId="38" CompleteYN="Y" Type="authors">
+                <Author gate:gateId="39" ValidYN="Y">
+                    <LastName gate:gateId="40">Davidson</LastName>
+                    <ForeName gate:gateId="41">Karina W</ForeName>
+                    <Initials gate:gateId="42">KW</Initials></Author>
+                
+                <Author gate:gateId="43" ValidYN="Y">
+                    <LastName gate:gateId="44">Rieckmann</LastName>
+                    <ForeName gate:gateId="45">Nina</ForeName>
+                    <Initials gate:gateId="46">N</Initials></Author>
+                
+                <Author gate:gateId="47" ValidYN="Y">
+                    <LastName gate:gateId="48">Clemow</LastName>
+                    <ForeName gate:gateId="49">Lynn</ForeName>
+                    <Initials gate:gateId="50">L</Initials></Author>
+                
+                <Author gate:gateId="51" ValidYN="Y">
+                    <LastName gate:gateId="52">Schwartz</LastName>
+                    <ForeName gate:gateId="53">Joseph E</ForeName>
+                    <Initials gate:gateId="54">JE</Initials></Author>
+                
+                <Author gate:gateId="55" ValidYN="Y">
+                    <LastName gate:gateId="56">Shimbo</LastName>
+                    <ForeName gate:gateId="57">Daichi</ForeName>
+                    <Initials gate:gateId="58">D</Initials></Author>
+                
+                <Author gate:gateId="59" ValidYN="Y">
+                    <LastName gate:gateId="60">Medina</LastName>
+                    <ForeName gate:gateId="61">Vivian</ForeName>
+                    <Initials gate:gateId="62">V</Initials></Author>
+                
+                <Author gate:gateId="63" ValidYN="Y">
+                    <LastName gate:gateId="64">Albanese</LastName>
+                    <ForeName gate:gateId="65">Gabrielle</ForeName>
+                    <Initials gate:gateId="66">G</Initials></Author>
+                
+                <Author gate:gateId="67" ValidYN="Y">
+                    <LastName gate:gateId="68">Kronish</LastName>
+                    <ForeName gate:gateId="69">Ian</ForeName>
+                    <Initials gate:gateId="70">I</Initials></Author>
+                
+                <Author gate:gateId="71" ValidYN="Y">
+                    <LastName gate:gateId="72">Hegel</LastName>
+                    <ForeName gate:gateId="73">Mark</ForeName>
+                    <Initials gate:gateId="74">M</Initials></Author>
+                
+                <Author gate:gateId="75" ValidYN="Y">
+                    <LastName gate:gateId="76">Burg</LastName>
+                    <ForeName gate:gateId="77">Matthew M</ForeName>
+                    <Initials gate:gateId="78">MM</Initials></Author></AuthorList>
+                
+            
+            <Language gate:gateId="79">eng</Language>
+            <DataBankList gate:gateId="80" CompleteYN="Y">
+                <DataBank gate:gateId="81">
+                    <DataBankName gate:gateId="82">ClinicalTrials.gov</DataBankName>
+                    <AccessionNumberList gate:gateId="83">
+                        <AccessionNumber gate:gateId="84">NCT00158054</AccessionNumber></AccessionNumberList></DataBank></DataBankList>
+                    
+                
+            
+            <GrantList gate:gateId="85" CompleteYN="Y">
+                <Grant gate:gateId="86">
+                    <GrantID gate:gateId="87">HC-25197</GrantID>
+                    <Acronym gate:gateId="88">HC</Acronym>
+                    <Agency gate:gateId="89">NHLBI NIH HHS</Agency>
+                    <Country gate:gateId="90">United States</Country></Grant>
+                
+                <Grant gate:gateId="91">
+                    <GrantID gate:gateId="92">HL-76857</GrantID>
+                    <Acronym gate:gateId="93">HL</Acronym>
+                    <Agency gate:gateId="94">NHLBI NIH HHS</Agency>
+                    <Country gate:gateId="95">United States</Country></Grant>
+                
+                <Grant gate:gateId="96">
+                    <GrantID gate:gateId="97">HL-84034</GrantID>
+                    <Acronym gate:gateId="98">HL</Acronym>
+                    <Agency gate:gateId="99">NHLBI NIH HHS</Agency>
+                    <Country gate:gateId="100">United States</Country></Grant>
+                
+                <Grant gate:gateId="101">
+                    <GrantID gate:gateId="102">R01 HL079235-01A1</GrantID>
+                    <Acronym gate:gateId="103">HL</Acronym>
+                    <Agency gate:gateId="104">NHLBI NIH HHS</Agency>
+                    <Country gate:gateId="105">United States</Country></Grant>
+                
+                <Grant gate:gateId="106">
+                    <GrantID gate:gateId="107">UL1RR024156</GrantID>
+                    <Acronym gate:gateId="108">RR</Acronym>
+                    <Agency gate:gateId="109">NCRR NIH HHS</Agency>
+                    <Country gate:gateId="110">United States</Country></Grant></GrantList>
+                
+            
+            <PublicationTypeList gate:gateId="111">
+                <PublicationType gate:gateId="112">Journal Article</PublicationType>
+                <PublicationType gate:gateId="113">Multicenter Study</PublicationType>
+                <PublicationType gate:gateId="114">Randomized Controlled Trial</PublicationType>
+                <PublicationType gate:gateId="115">Research Support, N.I.H., Extramural</PublicationType></PublicationTypeList></Article>
+            
+        
+        <MedlineJournalInfo gate:gateId="116">
+            <Country gate:gateId="117">United States</Country>
+            <MedlineTA gate:gateId="118">Arch Intern Med</MedlineTA>
+            <NlmUniqueID gate:gateId="119">0372440</NlmUniqueID>
+            <ISSNLinking gate:gateId="120">0003-9926</ISSNLinking></MedlineJournalInfo>
+        
+        <ChemicalList gate:gateId="121">
+            <Chemical gate:gateId="122">
+                <RegistryNumber gate:gateId="123">0</RegistryNumber>
+                <NameOfSubstance gate:gateId="124">Antidepressive Agents</NameOfSubstance></Chemical></ChemicalList>
+            
+        
+        <CitationSubset gate:gateId="125">AIM</CitationSubset>
+        <CitationSubset gate:gateId="126">IM</CitationSubset>
+        <CommentsCorrectionsList gate:gateId="127">
+            <CommentsCorrections gate:gateId="128" RefType="Cites">
+                <RefSource gate:gateId="129">Arch Gen Psychiatry. 2001 Mar;58(3):221-7</RefSource>
+                <PMID gate:gateId="130" Version="1">11231827</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="131" RefType="Cites">
+                <RefSource gate:gateId="132">Psychosom Med. 2001 Sep-Oct;63(5):747-55</RefSource>
+                <PMID gate:gateId="133" Version="1">11573023</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="134" RefType="Cites">
+                <RefSource gate:gateId="135">Circulation. 2002 Mar 5;105(9):1049-53</RefSource>
+                <PMID gate:gateId="136" Version="1">11877353</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="137" RefType="Cites">
+                <RefSource gate:gateId="138">JAMA. 2002 Aug 14;288(6):701-9</RefSource>
+                <PMID gate:gateId="139" Version="1">12169073</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="140" RefType="Cites">
+                <RefSource gate:gateId="141">JAMA. 2002 Dec 11;288(22):2836-45</RefSource>
+                <PMID gate:gateId="142" Version="1">12472325</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="143" RefType="Cites">
+                <RefSource gate:gateId="144">JAMA. 2003 Jun 18;289(23):3106-16</RefSource>
+                <PMID gate:gateId="145" Version="1">12813116</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="146" RefType="Cites">
+                <RefSource gate:gateId="147">Circulation. 2003 Nov 18;108(20):2543-9</RefSource>
+                <PMID gate:gateId="148" Version="1">14610011</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="149" RefType="Cites">
+                <RefSource gate:gateId="150">JAMA. 2003 Nov 12;290(18):2428-9</RefSource>
+                <PMID gate:gateId="151" Version="1">14612479</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="152" RefType="Cites">
+                <RefSource gate:gateId="153">Arch Gen Psychiatry. 2004 Jul;61(7):714-9</RefSource>
+                <PMID gate:gateId="154" Version="1">15237083</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="155" RefType="Cites">
+                <RefSource gate:gateId="156">JAMA. 2004 Aug 25;292(8):935-42</RefSource>
+                <PMID gate:gateId="157" Version="1">15328325</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="158" RefType="Cites">
+                <RefSource gate:gateId="159">Lancet. 2004 Sep 11-17;364(9438):953-62</RefSource>
+                <PMID gate:gateId="160" Version="1">15364186</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="161" RefType="Cites">
+                <RefSource gate:gateId="162">Psychosom Med. 2004 Nov-Dec;66(6):802-13</RefSource>
+                <PMID gate:gateId="163" Version="1">15564343</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="164" RefType="Cites">
+                <RefSource gate:gateId="165">Circulation. 2005 Jan 25;111(3):250-3</RefSource>
+                <PMID gate:gateId="166" Version="1">15668351</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="167" RefType="Cites">
+                <RefSource gate:gateId="168">Psychosom Med. 2005 May-Jun;67 Suppl 1:S6-9</RefSource>
+                <PMID gate:gateId="169" Version="1">15953804</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="170" RefType="Cites">
+                <RefSource gate:gateId="171">Arch Gen Psychiatry. 2005 Jul;62(7):792-8</RefSource>
+                <PMID gate:gateId="172" Version="1">15997021</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="173" RefType="Cites">
+                <RefSource gate:gateId="174">Psychol Med. 2006 Jan;36(1):7-14</RefSource>
+                <PMID gate:gateId="175" Version="1">16356292</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="176" RefType="Cites">
+                <RefSource gate:gateId="177">Neuropsychopharmacology. 2006 Sep;31(9):1841-53</RefSource>
+                <PMID gate:gateId="178" Version="1">16794566</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="179" RefType="Cites">
+                <RefSource gate:gateId="180">Psychosom Med. 2006 Sep-Oct;68(5):662-8</RefSource>
+                <PMID gate:gateId="181" Version="1">16987947</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="182" RefType="Cites">
+                <RefSource gate:gateId="183">Eur Heart J. 2006 Dec;27(23):2763-74</RefSource>
+                <PMID gate:gateId="184" Version="1">17082208</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="185" RefType="Cites">
+                <RefSource gate:gateId="186">Eur Psychiatry. 2007 Jan;22(1):1-8</RefSource>
+                <PMID gate:gateId="187" Version="1">17194571</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="188" RefType="Cites">
+                <RefSource gate:gateId="189">J Consult Clin Psychol. 2007 Apr;75(2):257-66</RefSource>
+                <PMID gate:gateId="190" Version="1">17469883</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="191" RefType="Cites">
+                <RefSource gate:gateId="192">Br J Psychiatry. 2007 Jun;190:460-6</RefSource>
+                <PMID gate:gateId="193" Version="1">17541103</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="194" RefType="Cites">
+                <RefSource gate:gateId="195">Am J Psychiatry. 2007 Sep;164(9):1371-8</RefSource>
+                <PMID gate:gateId="196" Version="1">17728422</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="197" RefType="Cites">
+                <RefSource gate:gateId="198">Cochrane Database Syst Rev. 2008;(1):CD004853</RefSource>
+                <PMID gate:gateId="199" Version="1">18254062</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="200" RefType="Cites">
+                <RefSource gate:gateId="201">PLoS Med. 2008 Feb;5(2):e45</RefSource>
+                <PMID gate:gateId="202" Version="1">18303940</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="203" RefType="Cites">
+                <RefSource gate:gateId="204">Arch Gen Psychiatry. 2008 Jul;65(7):851-2; author reply 852-3</RefSource>
+                <PMID gate:gateId="205" Version="1">18606957</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="206" RefType="Cites">
+                <RefSource gate:gateId="207">Am J Med. 2008 Nov;121(11 Suppl 2):S20-7</RefSource>
+                <PMID gate:gateId="208" Version="1">18954589</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="209" RefType="Cites">
+                <RefSource gate:gateId="210">Ann Intern Med. 2008 Nov 18;149(10):725-33</RefSource>
+                <PMID gate:gateId="211" Version="1">19017591</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="212" RefType="Cites">
+                <RefSource gate:gateId="213">J Consult Clin Psychol. 2008 Dec;76(6):909-22</RefSource>
+                <PMID gate:gateId="214" Version="1">19045960</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="215" RefType="Cites">
+                <RefSource gate:gateId="216">Lancet. 1997 May 24;349(9064):1498-504</RefSource>
+                <PMID gate:gateId="217" Version="1">9167458</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="218" RefType="Cites">
+                <RefSource gate:gateId="219">Lancet. 2001 Nov 24;358(9295):1766-71</RefSource>
+                <PMID gate:gateId="220" Version="1">11734233</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="221" RefType="Cites">
+                <RefSource gate:gateId="222">Psychosom Med. 2002 Nov-Dec;64(6):897-905</RefSource>
+                <PMID gate:gateId="223" Version="1">12461195</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="224" RefType="Cites">
+                <RefSource gate:gateId="225">Int J Epidemiol. 2002 Dec;31(6):1179-82</RefSource>
+                <PMID gate:gateId="226" Version="1">12540719</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="227" RefType="Cites">
+                <RefSource gate:gateId="228">Arch Gen Psychiatry. 1961 Jun;4:561-71</RefSource>
+                <PMID gate:gateId="229" Version="1">13688369</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="230" RefType="Cites">
+                <RefSource gate:gateId="231">JAMA. 2004 Jun 9;291(22):2727-33</RefSource>
+                <PMID gate:gateId="232" Version="1">15187054</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="233" RefType="Cites">
+                <RefSource gate:gateId="234">Psychosom Med. 2004 Jul-Aug;66(4):466-74</RefSource>
+                <PMID gate:gateId="235" Version="1">15272090</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="236" RefType="Cites">
+                <RefSource gate:gateId="237">Arch Gen Psychiatry. 2004 Oct;61(10):1042-9</RefSource>
+                <PMID gate:gateId="238" Version="1">15466678</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="239" RefType="Cites">
+                <RefSource gate:gateId="240">Psychosom Med. 2004 Nov-Dec;66(6):814-22</RefSource>
+                <PMID gate:gateId="241" Version="1">15564344</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="242" RefType="Cites">
+                <RefSource gate:gateId="243">Psychosom Med. 2005 May-Jun;67 Suppl 1:S19-25</RefSource>
+                <PMID gate:gateId="244" Version="1">15953794</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="245" RefType="Cites">
+                <RefSource gate:gateId="246">Arch Gen Psychiatry. 2005 Sep;62(9):1007-14</RefSource>
+                <PMID gate:gateId="247" Version="1">16143732</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="248" RefType="Cites">
+                <RefSource gate:gateId="249">BMJ. 2006 Feb 4;332(7536):259-63</RefSource>
+                <PMID gate:gateId="250" Version="1">16428253</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="251" RefType="Cites">
+                <RefSource gate:gateId="252">Psychosom Med. 2006 Sep-Oct;68(5):645-50</RefSource>
+                <PMID gate:gateId="253" Version="1">17012516</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="254" RefType="Cites">
+                <RefSource gate:gateId="255">Can J Psychiatry. 2006 Oct;51(12):730-7</RefSource>
+                <PMID gate:gateId="256" Version="1">17168247</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="257" RefType="Cites">
+                <RefSource gate:gateId="258">Int J Geriatr Psychiatry. 2007 Jul;22(7):613-26</RefSource>
+                <PMID gate:gateId="259" Version="1">17236251</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="260" RefType="Cites">
+                <RefSource gate:gateId="261">Br J Psychiatry. 2007 Jun;190:467-8</RefSource>
+                <PMID gate:gateId="262" Version="1">17541104</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="263" RefType="Cites">
+                <RefSource gate:gateId="264">Contemp Clin Trials. 2008 Mar;29(2):231-40</RefSource>
+                <PMID gate:gateId="265" Version="1">17904917</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="266" RefType="Cites">
+                <RefSource gate:gateId="267">JAMA. 2008 May 7;299(17):2086-7</RefSource>
+                <PMID gate:gateId="268" Version="1">18460669</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="269" RefType="Cites">
+                <RefSource gate:gateId="270">Circulation. 2008 Oct 21;118(17):1768-75</RefSource>
+                <PMID gate:gateId="271" Version="1">18824640</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="272" RefType="Cites">
+                <RefSource gate:gateId="273">JAMA. 2008 Nov 12;300(18):2161-71</RefSource>
+                <PMID gate:gateId="274" Version="1">19001627</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="275" RefType="CommentIn">
+                <RefSource gate:gateId="276">Arch Intern Med. 2010 Apr 12;170(7):585-6</RefSource>
+                <PMID gate:gateId="277" Version="1">20386000</PMID></CommentsCorrections></CommentsCorrectionsList>
+            
+        
+        <MeshHeadingList gate:gateId="278">
+            <MeshHeading gate:gateId="279">
+                <DescriptorName gate:gateId="280" MajorTopicYN="N">Acute Coronary Syndrome</DescriptorName>
+                <QualifierName gate:gateId="281" MajorTopicYN="Y">complications</QualifierName>
+                <QualifierName gate:gateId="282" MajorTopicYN="N">psychology</QualifierName></MeshHeading>
+            
+            <MeshHeading gate:gateId="283">
+                <DescriptorName gate:gateId="284" MajorTopicYN="N">Adaptation, Psychological</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="285">
+                <DescriptorName gate:gateId="286" MajorTopicYN="N">Aged</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="287">
+                <DescriptorName gate:gateId="288" MajorTopicYN="N">Antidepressive Agents</DescriptorName>
+                <QualifierName gate:gateId="289" MajorTopicYN="Y">therapeutic use</QualifierName></MeshHeading>
+            
+            <MeshHeading gate:gateId="290">
+                <DescriptorName gate:gateId="291" MajorTopicYN="N">Chi-Square Distribution</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="292">
+                <DescriptorName gate:gateId="293" MajorTopicYN="Y">Cognitive Therapy</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="294">
+                <DescriptorName gate:gateId="295" MajorTopicYN="N">Depression</DescriptorName>
+                <QualifierName gate:gateId="296" MajorTopicYN="N">diagnosis</QualifierName>
+                <QualifierName gate:gateId="297" MajorTopicYN="N">etiology</QualifierName>
+                <QualifierName gate:gateId="298" MajorTopicYN="Y">therapy</QualifierName></MeshHeading>
+            
+            <MeshHeading gate:gateId="299">
+                <DescriptorName gate:gateId="300" MajorTopicYN="N">Depressive Disorder</DescriptorName>
+                <QualifierName gate:gateId="301" MajorTopicYN="N">diagnosis</QualifierName>
+                <QualifierName gate:gateId="302" MajorTopicYN="N">etiology</QualifierName>
+                <QualifierName gate:gateId="303" MajorTopicYN="Y">therapy</QualifierName></MeshHeading>
+            
+            <MeshHeading gate:gateId="304">
+                <DescriptorName gate:gateId="305" MajorTopicYN="N">Female</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="306">
+                <DescriptorName gate:gateId="307" MajorTopicYN="N">Humans</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="308">
+                <DescriptorName gate:gateId="309" MajorTopicYN="N">Kaplan-Meier Estimate</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="310">
+                <DescriptorName gate:gateId="311" MajorTopicYN="N">Male</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="312">
+                <DescriptorName gate:gateId="313" MajorTopicYN="N">Middle Aged</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="314">
+                <DescriptorName gate:gateId="315" MajorTopicYN="N">Patient Acceptance of Health Care</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="316">
+                <DescriptorName gate:gateId="317" MajorTopicYN="N">Patient Satisfaction</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="318">
+                <DescriptorName gate:gateId="319" MajorTopicYN="N">Patient Selection</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="320">
+                <DescriptorName gate:gateId="321" MajorTopicYN="N">Problem Solving</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="322">
+                <DescriptorName gate:gateId="323" MajorTopicYN="N">Questionnaires</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="324">
+                <DescriptorName gate:gateId="325" MajorTopicYN="N">Regression Analysis</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="326">
+                <DescriptorName gate:gateId="327" MajorTopicYN="N">Severity of Illness Index</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="328">
+                <DescriptorName gate:gateId="329" MajorTopicYN="N">Sex Factors</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="330">
+                <DescriptorName gate:gateId="331" MajorTopicYN="N">Treatment Outcome</DescriptorName></MeshHeading></MeshHeadingList>
+            
+        
+        <OtherID gate:gateId="332" Source="NLM">NIHMS204151</OtherID>
+        <OtherID gate:gateId="333" Source="NLM">PMC2882253</OtherID></MedlineCitation>
+    
+    <PubmedData gate:gateId="334">
+        <History gate:gateId="335">
+            <PubMedPubDate gate:gateId="336" PubStatus="entrez">
+                <Year gate:gateId="337">2010</Year>
+                <Month gate:gateId="338">4</Month>
+                <Day gate:gateId="339">14</Day>
+                <Hour gate:gateId="340">6</Hour>
+                <Minute gate:gateId="341">0</Minute></PubMedPubDate>
+            
+            <PubMedPubDate gate:gateId="342" PubStatus="pubmed">
+                <Year gate:gateId="343">2010</Year>
+                <Month gate:gateId="344">4</Month>
+                <Day gate:gateId="345">14</Day>
+                <Hour gate:gateId="346">6</Hour>
+                <Minute gate:gateId="347">0</Minute></PubMedPubDate>
+            
+            <PubMedPubDate gate:gateId="348" PubStatus="medline">
+                <Year gate:gateId="349">2010</Year>
+                <Month gate:gateId="350">5</Month>
+                <Day gate:gateId="351">4</Day>
+                <Hour gate:gateId="352">6</Hour>
+                <Minute gate:gateId="353">0</Minute></PubMedPubDate></History>
+            
+        
+        <PublicationStatus gate:gateId="354">ppublish</PublicationStatus>
+        <ArticleIdList gate:gateId="355">
+            <ArticleId gate:gateId="356" IdType="pii">170/7/600</ArticleId>
+            <ArticleId gate:gateId="357" IdType="doi">10.1001/archinternmed.2010.29</ArticleId>
+            <ArticleId gate:gateId="358" IdType="pubmed">20386003</ArticleId>
+            <ArticleId gate:gateId="359" IdType="pmc">PMC2882253</ArticleId>
+            <ArticleId gate:gateId="360" IdType="mid">NIHMS204151</ArticleId></ArticleIdList></PubmedData></PubmedArticle>
+        
+    
+
+
+</PubmedArticleSet>

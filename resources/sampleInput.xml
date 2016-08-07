@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<PubmedArticleSet  gate:gateId="0" gate:annotMaxId="373" xmlns:gate="http://www.gate.ac.uk">
+  <PubmedArticle gate:gateId="1"><MedlineCitation gate:gateId="2" Status="MEDLINE" Owner="NLM">
+    <PMID gate:gateId="3" Version="1">20231034</PMID>
+        <DateCreated gate:gateId="4">
+            <Year gate:gateId="5">2010</Year>
+            <Month gate:gateId="6">03</Month>
+            <Day gate:gateId="7">29</Day></DateCreated>
+
+        <DateCompleted gate:gateId="8">
+            <Year gate:gateId="9">2010</Year>
+            <Month gate:gateId="10">05</Month>
+            <Day gate:gateId="11">11</Day></DateCompleted>
+
+        <DateRevised gate:gateId="12">
+            <Year gate:gateId="13">2010</Year>
+            <Month gate:gateId="14">11</Month>
+            <Day gate:gateId="15">18</Day></DateRevised>
+
+        <Article gate:gateId="16" PubModel="Print-Electronic">
+            <Journal gate:gateId="17">
+                <ISSN gate:gateId="18" IssnType="Electronic">1474-547X</ISSN>
+                <JournalIssue gate:gateId="19" CitedMedium="Internet">
+                    <Volume gate:gateId="20">375</Volume>
+                    <Issue gate:gateId="21">9720</Issue>
+                    <PubDate gate:gateId="22">
+                        <Year gate:gateId="23">2010</Year>
+                        <Month gate:gateId="24">Mar</Month>
+                        <Day gate:gateId="25">27</Day></PubDate></JournalIssue>
+
+
+                <Title gate:gateId="26">Lancet</Title>
+                <ISOAbbreviation gate:gateId="27">Lancet</ISOAbbreviation></Journal>
+
+            <ArticleTitle gate:gateId="28">Efficacy and safety of <group gate:gateId="355" id="0" role="experiment">zotarolimus-eluting</group> and <group gate:gateId="356" id="1" role="control">sirolimus-eluting coronary stents</group> in routine clinical care (SORT OUT III): a randomised controlled superiority trial.</ArticleTitle>
+            <Pagination gate:gateId="29">
+                <MedlinePgn gate:gateId="30">1090-9</MedlinePgn></Pagination>
+
+            <Abstract gate:gateId="31">
+                <AbstractText gate:gateId="32" Label="BACKGROUND" NlmCategory="BACKGROUND">In low-risk <population gate:gateId="324">patients</population> , the <group gate:gateId="296" id="0" role="experiment">zotarolimus-eluting stent</group> has been shown to reduce rates of restenosis without increasing the risk of stent thrombosis. We compared the efficacy and safety of the <group gate:gateId="297" id="0" role="experiment" safe.regex="true">zotarolimus-eluting stent</group> versus the <group gate:gateId="303" id="1" role="control">sirolimus-eluting stent</group> in <population gate:gateId="326" safe.regex="true">patients</population> <condition gate:gateId="360" id="0">with coronary artery disease who were receiving routine clinical care with no direct follow-up</condition>.</AbstractText>
+                <AbstractText gate:gateId="33" Label="METHODS" NlmCategory="METHODS">We did a single-blind, all-comer superiority trial in adult <population gate:gateId="327" safe.regex="true">patients</population> <condition gate:gateId="362" id="0">with chronic stable coronary artery disease or acute coronary syndromes</condition> , and <condition gate:gateId="358" id="1">at least one target lesion</condition>. <population gate:gateId="359" id="0">Patients</population> were treated at one of five percutaneous coronary intervention centres between January, 2006, and August, 2007. Computer-generated block randomisation and a telephone allocation service were used to randomly assign <population gate:gateId="328" safe.regex="true">patients</population> to receive the <group gate:gateId="363" id="0" role="experiment">zotarolimus-eluting</group> or the <group gate:gateId="304" id="1" role="control" safe.regex="true">sirolimus-eluting stent</group> . Data for follow-up were obtained from national Danish administrative and health-care registries. <outcome gate:gateId="353" id="0" type="bad" focus="primary"><short gate:gateId="370">The primary endpoint</short> was a composite of major adverse cardiac events within <time gate:gateId="315" id="0">9 months</time> : cardiac death, myocardial infarction, and target vessel revascularisation</outcome> . Intention-to-treat analyses were done at <time gate:gateId="365" id="0" units="months">9-month</time> and <time gate:gateId="316" id="1" units="months">18-month</time> follow-up. This trial is registered with ClinicalTrials.gov, number NCT00660478.</AbstractText>
+                <AbstractText gate:gateId="34" Label="FINDINGS" NlmCategory="RESULTS"><gs gate:gateId="310" group="0">1162</gs> <population gate:gateId="329" safe.regex="true">patients</population> (1619 lesions) were assigned to receive the <group gate:gateId="298" id="0" role="experiment" safe.regex="true">zotarolimus-eluting stent</group> , and <gs gate:gateId="311" group="1">1170</gs> <population gate:gateId="330" safe.regex="true">patients</population> (1611 lesions) to receive the <group gate:gateId="305" id="1" role="control" safe.regex="true">sirolimus-eluting stent</group> . 67 <population gate:gateId="331" safe.regex="true">patients</population> (72 lesions) had stent failure, and <lost gate:gateId="312" group="1">six</lost> <population gate:gateId="332" safe.regex="true">patients</population> were lost to follow-up. All randomly assigned <population gate:gateId="333" safe.regex="true">patients</population> were included in analyses at <time gate:gateId="366" id="0" units="months">9-month</time> follow-up; 2200 <population gate:gateId="334" safe.regex="true">patients</population> (94%) had completed <time gate:gateId="367" id="1" units="months">18-month</time> follow-up by the time of our assessment. At <time gate:gateId="368" id="0" units="months">9 months</time>, the <outcome gate:gateId="318" type="bad" id="0">primary endpoint</outcome> had occurred in a higher proportion of <population gate:gateId="335" safe.regex="true">patients</population> treated with the <group gate:gateId="299" id="0" role="experiment" safe.regex="true">zotarolimus-eluting stent</group> than in those treated with the <group gate:gateId="306" id="1" role="control" safe.regex="true">sirolimus-eluting stent</group> ( <on gate:gateId="320" group="0" outcome="0" time="0">72</on> [ <eventRate gate:gateId="343" group="0" outcome="0" time="0">6%</eventRate> ] vs <on gate:gateId="321" group="1" outcome="0" time="0">34</on> [ <eventRate gate:gateId="344" group="1" outcome="0" time="0">3%</eventRate> ]; HR 2.15, 95% CI 1.43-3.23; p=0.0002). At <time gate:gateId="369" id="1" units="months">18-month</time> follow-up, this difference was sustained ( <on gate:gateId="322" group="0" outcome="0" time="1">113</on> [ <eventRate gate:gateId="345" group="0" outcome="0" time="1">10%</eventRate> ] vs <on gate:gateId="323" group="1" outcome="0" time="1">53</on> [ <eventRate gate:gateId="346" group="1" outcome="0" time="1">5%</eventRate> ]; 2.19, 1.58-3.04; p&lt;0.0001). For <population gate:gateId="336" safe.regex="true">patients</population> receiving the <group gate:gateId="300" id="0" role="experiment" safe.regex="true">zotarolimus-eluting stent</group> and those receiving the <group gate:gateId="307" id="1" role="control" safe.regex="true">sirolimus-eluting stent</group> , <outcome gate:gateId="338" type="bad" id="1">all cause-mortality</outcome> was similar at <time gate:gateId="371" id="0" units="months">9-month</time> follow-up ( <on gate:gateId="339" group="0" outcome="1" time="0">25</on> [ <eventRate gate:gateId="347" group="0" outcome="1" time="0">2%</eventRate> ] vs <on gate:gateId="340" group="1" outcome="1" time="0">18</on> [ <eventRate gate:gateId="348" group="1" outcome="1" time="0">2%</eventRate> ]; 1.40, 0.76-2.56; p=0.28), but was significantly different at <time gate:gateId="372" id="1" units="months">18-month</time> follow-up ( <on gate:gateId="341" group="0" outcome="1" time="1">51</on> [ <eventRate gate:gateId="349" group="0" outcome="1" time="1">4%</eventRate> ] vs <on gate:gateId="342" group="1" outcome="1" time="1">32</on> [ <eventRate gate:gateId="350" group="1" outcome="1" time="1">3%</eventRate> ]; 1.61, 1.03-2.50; p=0.035).</AbstractText>
+                <AbstractText gate:gateId="35" Label="INTERPRETATION" NlmCategory="CONCLUSIONS">The <group gate:gateId="308" id="1" role="control" safe.regex="true">sirolimus-eluting stent</group> is superior to the <group gate:gateId="301" id="0" role="experiment" safe.regex="true">zotarolimus-eluting stent</group> for <population gate:gateId="337" safe.regex="true">patients</population> <condition gate:gateId="361" id="0">receiving routine clinical care</condition>.</AbstractText>
+                <AbstractText gate:gateId="36" Label="FUNDING" NlmCategory="BACKGROUND">Cordis and Medtronic.</AbstractText>
+                <CopyrightInformation gate:gateId="37">Copyright 2010 Elsevier Ltd. All rights reserved.</CopyrightInformation></Abstract>
+
+            <Affiliation gate:gateId="38">Department of Cardiology, Aarhus University Hospital, Aalborg Hospital, Aalborg, Denmark.</Affiliation>
+            <AuthorList gate:gateId="39" CompleteYN="Y" Type="authors">
+                <Author gate:gateId="40" ValidYN="Y">
+                    <LastName gate:gateId="41">Rasmussen</LastName>
+                    <ForeName gate:gateId="42">Klaus</ForeName>
+                    <Initials gate:gateId="43">K</Initials></Author>
+
+                <Author gate:gateId="44" ValidYN="Y">
+                    <LastName gate:gateId="45">Maeng</LastName>
+                    <ForeName gate:gateId="46">Michael</ForeName>
+                    <Initials gate:gateId="47">M</Initials></Author>
+
+                <Author gate:gateId="48" ValidYN="Y">
+                    <LastName gate:gateId="49">Kaltoft</LastName>
+                    <ForeName gate:gateId="50">Anne</ForeName>
+                    <Initials gate:gateId="51">A</Initials></Author>
+
+                <Author gate:gateId="52" ValidYN="Y">
+                    <LastName gate:gateId="53">Thayssen</LastName>
+                    <ForeName gate:gateId="54">Per</ForeName>
+                    <Initials gate:gateId="55">P</Initials></Author>
+
+                <Author gate:gateId="56" ValidYN="Y">
+                    <LastName gate:gateId="57">Kelbaek</LastName>
+                    <ForeName gate:gateId="58">Henning</ForeName>
+                    <Initials gate:gateId="59">H</Initials></Author>
+
+                <Author gate:gateId="60" ValidYN="Y">
+                    <LastName gate:gateId="61">Tilsted</LastName>
+                    <ForeName gate:gateId="62">Hans Henrik</ForeName>
+                    <Initials gate:gateId="63">HH</Initials></Author>
+
+                <Author gate:gateId="64" ValidYN="Y">
+                    <LastName gate:gateId="65">Abildgaard</LastName>
+                    <ForeName gate:gateId="66">Ulrik</ForeName>
+                    <Initials gate:gateId="67">U</Initials></Author>
+
+                <Author gate:gateId="68" ValidYN="Y">
+                    <LastName gate:gateId="69">Christiansen</LastName>
+                    <ForeName gate:gateId="70">Evald Høj</ForeName>
+                    <Initials gate:gateId="71">EH</Initials></Author>
+
+                <Author gate:gateId="72" ValidYN="Y">
+                    <LastName gate:gateId="73">Engstrøm</LastName>
+                    <ForeName gate:gateId="74">Thomas</ForeName>
+                    <Initials gate:gateId="75">T</Initials></Author>
+
+                <Author gate:gateId="76" ValidYN="Y">
+                    <LastName gate:gateId="77">Krusell</LastName>
+                    <ForeName gate:gateId="78">Lars Romer</ForeName>
+                    <Initials gate:gateId="79">LR</Initials></Author>
+
+                <Author gate:gateId="80" ValidYN="Y">
+                    <LastName gate:gateId="81">Ravkilde</LastName>
+                    <ForeName gate:gateId="82">Jan</ForeName>
+                    <Initials gate:gateId="83">J</Initials></Author>
+
+                <Author gate:gateId="84" ValidYN="Y">
+                    <LastName gate:gateId="85">Hansen</LastName>
+                    <ForeName gate:gateId="86">Peter Riis</ForeName>
+                    <Initials gate:gateId="87">PR</Initials></Author>
+
+                <Author gate:gateId="88" ValidYN="Y">
+                    <LastName gate:gateId="89">Hansen</LastName>
+                    <ForeName gate:gateId="90">Knud Nørregaard</ForeName>
+                    <Initials gate:gateId="91">KN</Initials></Author>
+
+                <Author gate:gateId="92" ValidYN="Y">
+                    <LastName gate:gateId="93">Abildstrøm</LastName>
+                    <ForeName gate:gateId="94">Steen Zabell</ForeName>
+                    <Initials gate:gateId="95">SZ</Initials></Author>
+
+                <Author gate:gateId="96" ValidYN="Y">
+                    <LastName gate:gateId="97">Aarøe</LastName>
+                    <ForeName gate:gateId="98">Jens</ForeName>
+                    <Initials gate:gateId="99">J</Initials></Author>
+
+                <Author gate:gateId="100" ValidYN="Y">
+                    <LastName gate:gateId="101">Jensen</LastName>
+                    <ForeName gate:gateId="102">Jan Skov</ForeName>
+                    <Initials gate:gateId="103">JS</Initials></Author>
+
+                <Author gate:gateId="104" ValidYN="Y">
+                    <LastName gate:gateId="105">Kristensen</LastName>
+                    <ForeName gate:gateId="106">Steen Dalby</ForeName>
+                    <Initials gate:gateId="107">SD</Initials></Author>
+
+                <Author gate:gateId="108" ValidYN="Y">
+                    <LastName gate:gateId="109">Bøtker</LastName>
+                    <ForeName gate:gateId="110">Hans Erik</ForeName>
+                    <Initials gate:gateId="111">HE</Initials></Author>
+
+                <Author gate:gateId="112" ValidYN="Y">
+                    <LastName gate:gateId="113">Madsen</LastName>
+                    <ForeName gate:gateId="114">Morten</ForeName>
+                    <Initials gate:gateId="115">M</Initials></Author>
+
+                <Author gate:gateId="116" ValidYN="Y">
+                    <LastName gate:gateId="117">Johnsen</LastName>
+                    <ForeName gate:gateId="118">Søren Paaske</ForeName>
+                    <Initials gate:gateId="119">SP</Initials></Author>
+
+                <Author gate:gateId="120" ValidYN="Y">
+                    <LastName gate:gateId="121">Jensen</LastName>
+                    <ForeName gate:gateId="122">Lisette Okkels</ForeName>
+                    <Initials gate:gateId="123">LO</Initials></Author>
+
+                <Author gate:gateId="124" ValidYN="Y">
+                    <LastName gate:gateId="125">Sørensen</LastName>
+                    <ForeName gate:gateId="126">Henrik Toft</ForeName>
+                    <Initials gate:gateId="127">HT</Initials></Author>
+
+                <Author gate:gateId="128" ValidYN="Y">
+                    <LastName gate:gateId="129">Thuesen</LastName>
+                    <ForeName gate:gateId="130">Leif</ForeName>
+                    <Initials gate:gateId="131">L</Initials></Author>
+
+                <Author gate:gateId="132" ValidYN="Y">
+                    <LastName gate:gateId="133">Lassen</LastName>
+                    <ForeName gate:gateId="134">Jens Flensted</ForeName>
+                    <Initials gate:gateId="135">JF</Initials></Author>
+
+                <Author gate:gateId="136" ValidYN="Y">
+                    <CollectiveName gate:gateId="137">SORT OUT III study group</CollectiveName></Author></AuthorList>
+
+
+            <Language gate:gateId="138">eng</Language>
+            <DataBankList gate:gateId="139" CompleteYN="Y">
+                <DataBank gate:gateId="140">
+                    <DataBankName gate:gateId="141">ClinicalTrials.gov</DataBankName>
+                    <AccessionNumberList gate:gateId="142">
+                        <AccessionNumber gate:gateId="143">NCT00660478</AccessionNumber></AccessionNumberList></DataBank></DataBankList>
+
+
+
+            <PublicationTypeList gate:gateId="144">
+                <PublicationType gate:gateId="145">Comparative Study</PublicationType>
+                <PublicationType gate:gateId="146">Journal Article</PublicationType>
+                <PublicationType gate:gateId="147">Multicenter Study</PublicationType>
+                <PublicationType gate:gateId="148">Randomized Controlled Trial</PublicationType>
+                <PublicationType gate:gateId="149">Research Support, Non-U.S. Gov&apos;t</PublicationType></PublicationTypeList>
+
+            <ArticleDate gate:gateId="150" DateType="Electronic">
+                <Year gate:gateId="151">2010</Year>
+                <Month gate:gateId="152">03</Month>
+                <Day gate:gateId="153">16</Day></ArticleDate></Article>
+
+
+        <MedlineJournalInfo gate:gateId="154">
+            <Country gate:gateId="155">England</Country>
+            <MedlineTA gate:gateId="156">Lancet</MedlineTA>
+            <NlmUniqueID gate:gateId="157">2985213R</NlmUniqueID>
+            <ISSNLinking gate:gateId="158">0140-6736</ISSNLinking></MedlineJournalInfo>
+
+        <ChemicalList gate:gateId="159">
+            <Chemical gate:gateId="160">
+                <RegistryNumber gate:gateId="161">0</RegistryNumber>
+                <NameOfSubstance gate:gateId="162">zotarolimus</NameOfSubstance></Chemical>
+
+            <Chemical gate:gateId="163">
+                <RegistryNumber gate:gateId="164">53123-88-9</RegistryNumber>
+                <NameOfSubstance gate:gateId="165">Sirolimus</NameOfSubstance></Chemical></ChemicalList>
+
+
+        <CitationSubset gate:gateId="166">AIM</CitationSubset>
+        <CitationSubset gate:gateId="167">IM</CitationSubset>
+        <CommentsCorrectionsList gate:gateId="168">
+            <CommentsCorrections gate:gateId="169" RefType="CommentIn">
+                <RefSource gate:gateId="170">Lancet. 2010 Mar 27;375(9720):1060-2</RefSource>
+                <PMID gate:gateId="171" Version="1">20231035</PMID></CommentsCorrections>
+
+            <CommentsCorrections gate:gateId="172" RefType="CommentIn">
+                <RefSource gate:gateId="173">Nat Rev Cardiol. 2010 May;7(5):240</RefSource>
+                <PMID gate:gateId="174" Version="1">20425900</PMID></CommentsCorrections></CommentsCorrectionsList>
+
+
+        <MeshHeadingList gate:gateId="175">
+            <MeshHeading gate:gateId="176">
+                <DescriptorName gate:gateId="177" MajorTopicYN="N">Aged</DescriptorName></MeshHeading>
+
+            <MeshHeading gate:gateId="178">
+                <DescriptorName gate:gateId="179" MajorTopicYN="N">Angioplasty, Balloon, Coronary</DescriptorName></MeshHeading>
+
+            <MeshHeading gate:gateId="180">
+                <DescriptorName gate:gateId="181" MajorTopicYN="N">Coronary Disease</DescriptorName>
+                <QualifierName gate:gateId="182" MajorTopicYN="Y">therapy</QualifierName></MeshHeading>
+
+            <MeshHeading gate:gateId="183">
+                <DescriptorName gate:gateId="184" MajorTopicYN="N">Coronary Restenosis</DescriptorName>
+                <QualifierName gate:gateId="185" MajorTopicYN="N">prevention &amp; control</QualifierName></MeshHeading>
+
+            <MeshHeading gate:gateId="186">
+                <DescriptorName gate:gateId="187" MajorTopicYN="Y">Drug-Eluting Stents</DescriptorName>
+                <QualifierName gate:gateId="188" MajorTopicYN="N">adverse effects</QualifierName></MeshHeading>
+
+            <MeshHeading gate:gateId="189">
+                <DescriptorName gate:gateId="190" MajorTopicYN="N">Female</DescriptorName></MeshHeading>
+
+            <MeshHeading gate:gateId="191">
+                <DescriptorName gate:gateId="192" MajorTopicYN="N">Humans</DescriptorName></MeshHeading>
+
+            <MeshHeading gate:gateId="193">
+                <DescriptorName gate:gateId="194" MajorTopicYN="N">Male</DescriptorName></MeshHeading>
+
+            <MeshHeading gate:gateId="195">
+                <DescriptorName gate:gateId="196" MajorTopicYN="N">Middle Aged</DescriptorName></MeshHeading>
+
+            <MeshHeading gate:gateId="197">
+                <DescriptorName gate:gateId="198" MajorTopicYN="N">Myocardial Infarction</DescriptorName>
+                <QualifierName gate:gateId="199" MajorTopicYN="N">etiology</QualifierName></MeshHeading>
+
+            <MeshHeading gate:gateId="200">
+                <DescriptorName gate:gateId="201" MajorTopicYN="N">Retreatment</DescriptorName></MeshHeading>
+
+            <MeshHeading gate:gateId="202">
+                <DescriptorName gate:gateId="203" MajorTopicYN="N">Single-Blind Method</DescriptorName></MeshHeading>
+
+            <MeshHeading gate:gateId="204">
+                <DescriptorName gate:gateId="205" MajorTopicYN="N">Sirolimus</DescriptorName>
+                <QualifierName gate:gateId="206" MajorTopicYN="N">adverse effects</QualifierName>
+                <QualifierName gate:gateId="207" MajorTopicYN="Y">analogs &amp; derivatives</QualifierName></MeshHeading>
+
+            <MeshHeading gate:gateId="208">
+                <DescriptorName gate:gateId="209" MajorTopicYN="N">Thrombosis</DescriptorName>
+                <QualifierName gate:gateId="210" MajorTopicYN="N">etiology</QualifierName></MeshHeading>
+
+            <MeshHeading gate:gateId="211">
+                <DescriptorName gate:gateId="212" MajorTopicYN="N">Treatment Outcome</DescriptorName></MeshHeading></MeshHeadingList>
+
+
+        <InvestigatorList gate:gateId="213">
+            <Investigator gate:gateId="214" ValidYN="Y">
+                <LastName gate:gateId="215">Rasmussen</LastName>
+                <ForeName gate:gateId="216">K</ForeName>
+                <Initials gate:gateId="217">K</Initials></Investigator>
+
+            <Investigator gate:gateId="218" ValidYN="Y">
+                <LastName gate:gateId="219">Thygesen</LastName>
+                <ForeName gate:gateId="220">K</ForeName>
+                <Initials gate:gateId="221">K</Initials></Investigator>
+
+            <Investigator gate:gateId="222" ValidYN="Y">
+                <LastName gate:gateId="223">Nørgaard</LastName>
+                <ForeName gate:gateId="224">B L</ForeName>
+                <Initials gate:gateId="225">BL</Initials></Investigator>
+
+            <Investigator gate:gateId="226" ValidYN="Y">
+                <LastName gate:gateId="227">Terkelsen</LastName>
+                <ForeName gate:gateId="228">C J</ForeName>
+                <Initials gate:gateId="229">CJ</Initials></Investigator>
+
+            <Investigator gate:gateId="230" ValidYN="Y">
+                <LastName gate:gateId="231">Madsen</LastName>
+                <ForeName gate:gateId="232">M</ForeName>
+                <Initials gate:gateId="233">M</Initials></Investigator>
+
+            <Investigator gate:gateId="234" ValidYN="Y">
+                <LastName gate:gateId="235">Johnsen</LastName>
+                <ForeName gate:gateId="236">S P</ForeName>
+                <Initials gate:gateId="237">SP</Initials></Investigator>
+
+            <Investigator gate:gateId="238" ValidYN="Y">
+                <LastName gate:gateId="239">Sørensen</LastName>
+                <ForeName gate:gateId="240">H T</ForeName>
+                <Initials gate:gateId="241">HT</Initials></Investigator>
+
+            <Investigator gate:gateId="242" ValidYN="Y">
+                <LastName gate:gateId="243">Rasmussen</LastName>
+                <ForeName gate:gateId="244">K</ForeName>
+                <Initials gate:gateId="245">K</Initials></Investigator>
+
+            <Investigator gate:gateId="246" ValidYN="Y">
+                <LastName gate:gateId="247">Tilsted</LastName>
+                <ForeName gate:gateId="248">Hans H</ForeName>
+                <Initials gate:gateId="249">HH</Initials></Investigator>
+
+            <Investigator gate:gateId="250" ValidYN="Y">
+                <LastName gate:gateId="251">Thayssen</LastName>
+                <ForeName gate:gateId="252">P</ForeName>
+                <Initials gate:gateId="253">P</Initials></Investigator>
+
+            <Investigator gate:gateId="254" ValidYN="Y">
+                <LastName gate:gateId="255">Kelbaek</LastName>
+                <ForeName gate:gateId="256">H</ForeName>
+                <Initials gate:gateId="257">H</Initials></Investigator>
+
+            <Investigator gate:gateId="258" ValidYN="Y">
+                <LastName gate:gateId="259">Lassen</LastName>
+                <ForeName gate:gateId="260">J F</ForeName>
+                <Initials gate:gateId="261">JF</Initials></Investigator>
+
+            <Investigator gate:gateId="262" ValidYN="Y">
+                <LastName gate:gateId="263">Thuesen</LastName>
+                <ForeName gate:gateId="264">L</ForeName>
+                <Initials gate:gateId="265">L</Initials></Investigator></InvestigatorList></MedlineCitation>
+
+    <PubmedData gate:gateId="266">
+        <History gate:gateId="267">
+            <PubMedPubDate gate:gateId="268" PubStatus="aheadofprint">
+                <Year gate:gateId="269">2010</Year>
+                <Month gate:gateId="270">3</Month>
+                <Day gate:gateId="271">16</Day></PubMedPubDate>
+
+            <PubMedPubDate gate:gateId="272" PubStatus="entrez">
+                <Year gate:gateId="273">2010</Year>
+                <Month gate:gateId="274">3</Month>
+                <Day gate:gateId="275">17</Day>
+                <Hour gate:gateId="276">6</Hour>
+                <Minute gate:gateId="277">0</Minute></PubMedPubDate>
+
+            <PubMedPubDate gate:gateId="278" PubStatus="pubmed">
+                <Year gate:gateId="279">2010</Year>
+                <Month gate:gateId="280">3</Month>
+                <Day gate:gateId="281">17</Day>
+                <Hour gate:gateId="282">6</Hour>
+                <Minute gate:gateId="283">0</Minute></PubMedPubDate>
+
+            <PubMedPubDate gate:gateId="284" PubStatus="medline">
+                <Year gate:gateId="285">2010</Year>
+                <Month gate:gateId="286">5</Month>
+                <Day gate:gateId="287">12</Day>
+                <Hour gate:gateId="288">6</Hour>
+                <Minute gate:gateId="289">0</Minute></PubMedPubDate></History>
+
+
+        <PublicationStatus gate:gateId="290">ppublish</PublicationStatus>
+        <ArticleIdList gate:gateId="291">
+            <ArticleId gate:gateId="292" IdType="pii">S0140-6736(10)60208-5</ArticleId>
+            <ArticleId gate:gateId="293" IdType="doi">10.1016/S0140-6736(10)60208-5</ArticleId>
+            <ArticleId gate:gateId="294" IdType="pubmed">20231034</ArticleId></ArticleIdList></PubmedData></PubmedArticle>
+
+</PubmedArticleSet>

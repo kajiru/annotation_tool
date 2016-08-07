@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="MacRoman" ?>
+<PubmedArticleSet  gate:gateId="0" gate:annotMaxId="230" xmlns:gate="http://www.gate.ac.uk"><PubmedArticle gate:gateId="1"><MedlineCitation gate:gateId="2" Owner="NLM" Status="MEDLINE"><PMID gate:gateId="3" Version="1">20381654</PMID>
+        <DateCreated gate:gateId="4">
+            <Year gate:gateId="5">2010</Year>
+            <Month gate:gateId="6">04</Month>
+            <Day gate:gateId="7">12</Day></DateCreated>
+        
+        <DateCompleted gate:gateId="8">
+            <Year gate:gateId="9">2010</Year>
+            <Month gate:gateId="10">06</Month>
+            <Day gate:gateId="11">15</Day></DateCompleted>
+        
+        <DateRevised gate:gateId="12">
+            <Year gate:gateId="13">2010</Year>
+            <Month gate:gateId="14">11</Month>
+            <Day gate:gateId="15">18</Day></DateRevised>
+        
+        <Article gate:gateId="16" PubModel="Print-Electronic">
+            <Journal gate:gateId="17">
+                <ISSN gate:gateId="18" IssnType="Electronic">1879-1913</ISSN>
+                <JournalIssue gate:gateId="19" CitedMedium="Internet">
+                    <Volume gate:gateId="20">105</Volume>
+                    <Issue gate:gateId="21">8</Issue>
+                    <PubDate gate:gateId="22">
+                        <Year gate:gateId="23">2010</Year>
+                        <Month gate:gateId="24">Apr</Month>
+                        <Day gate:gateId="25">15</Day></PubDate></JournalIssue>
+                    
+                
+                <Title gate:gateId="26">The American journal of cardiology</Title>
+                <ISOAbbreviation gate:gateId="27">Am. J. Cardiol.</ISOAbbreviation></Journal>
+            
+            <ArticleTitle gate:gateId="28">Comparison of usefulness of N-terminal pro-brain natriuretic peptide as an independent predictor of cardiac function among admission cardiac serum biomarkers in patients with anterior wall versus nonanterior wall ST-segment elevation myocardial infarction undergoing primary percutaneous coronary intervention.</ArticleTitle>
+            <Pagination gate:gateId="29">
+                <MedlinePgn gate:gateId="30">1065-9</MedlinePgn></Pagination>
+            
+            <Abstract gate:gateId="31">
+                <AbstractText gate:gateId="32">The purpose of the present study was to determine the prognostic value of N-terminal pro-brain natriuretic peptide (NT-pro-BNP), among other serum biomarkers, on cardiac magnetic resonance (CMR) imaging parameters of cardiac function and infarct size in patients with ST-segment elevation myocardial infarction undergoing primary percutaneous coronary intervention. We measured NT-pro-BNP, cardiac troponin T, creatinine kinase-MB fraction, high-sensitivity C-reactive protein, and creatinine on the patients&apos; arrival at the catheterization laboratory in 206 <population gate:gateId="212">patients</population> with <condition gate:gateId="211" id="0">ST-segment elevation myocardial infarction</condition> . The NT-pro-BNP levels were divided into quartiles and correlated with left ventricular function and infarct size measured by CMR imaging at 4 to 6 months. Compared to the <group gate:gateId="213" id="0" role="control">lower quartiles</group> , patients with <condition gate:gateId="215" id="0">nonanterior wall myocardial infarction</condition> in the <group gate:gateId="214" id="1" role="experiment">highest quartile of NT-pro-BNP</group> (&gt; or = 260 pg/ml) more often had a greater <outcome gate:gateId="216" id="0">left ventricular end-systolic volume</outcome> ( 68 vs 39 ml/m(2) , p &lt;0.001), a lower <outcome gate:gateId="217" id="1">left ventricular ejection fraction</outcome> ( <eventRate gate:gateId="222" group="1" outcome="1">42%</eventRate> vs <eventRate gate:gateId="223" group="0" outcome="1">54%</eventRate> , p &lt;0.001), a larger <outcome gate:gateId="218" id="2">infarct size</outcome> ( 9 vs 4 g/m(2) , p = 0.002), and a larger <outcome gate:gateId="219" id="3">number of transmural segments</outcome> ( <eventRate gate:gateId="226" group="1" outcome="3">11%</eventRate> of segments vs <eventRate gate:gateId="227" group="0" outcome="3">3%</eventRate> of segments, p &lt;0.001). Multivariate analysis revealed that a NT-pro-BNP level of &gt; or = 260 pg/ml was the strongest independent predictor of left ventricular ejection fraction in patients with <condition gate:gateId="229" id="0">nonanterior wall myocardial infarction</condition> compared to the other serum biomarkers (beta = -5.8; p = 0.019). In conclusion, in patients with <condition gate:gateId="228" id="0">nonanterior wall myocardial infarction</condition> undergoing primary percutaneous coronary intervention, an admission NT-pro-BNP level of &gt; or = 260 pg/ml was a strong, independent predictor of left ventricular function assessed by CMR imaging at follow-up. Our findings suggest that NT-pro-BNP, a widely available biomarker, might be helpful in the early risk stratification of patients with nonanterior wall myocardial infarction.</AbstractText>
+                <CopyrightInformation gate:gateId="33">Copyright 2010 Elsevier Inc. All rights reserved.</CopyrightInformation></Abstract>
+            
+            <Affiliation gate:gateId="34">Department of Cardiology, University of Amsterdam Academic Medical Center, Amsterdam, The Netherlands. j.d.haeck@amc.uva.nl</Affiliation>
+            <AuthorList gate:gateId="35" CompleteYN="Y" Type="authors">
+                <Author gate:gateId="36" ValidYN="Y">
+                    <LastName gate:gateId="37">Haeck</LastName>
+                    <ForeName gate:gateId="38">Joost D E</ForeName>
+                    <Initials gate:gateId="39">JD</Initials></Author>
+                
+                <Author gate:gateId="40" ValidYN="Y">
+                    <LastName gate:gateId="41">Verouden</LastName>
+                    <ForeName gate:gateId="42">Niels J W</ForeName>
+                    <Initials gate:gateId="43">NJ</Initials></Author>
+                
+                <Author gate:gateId="44" ValidYN="Y">
+                    <LastName gate:gateId="45">Kuijt</LastName>
+                    <ForeName gate:gateId="46">Wichert J</ForeName>
+                    <Initials gate:gateId="47">WJ</Initials></Author>
+                
+                <Author gate:gateId="48" ValidYN="Y">
+                    <LastName gate:gateId="49">Koch</LastName>
+                    <ForeName gate:gateId="50">Karel T</ForeName>
+                    <Initials gate:gateId="51">KT</Initials></Author>
+                
+                <Author gate:gateId="52" ValidYN="Y">
+                    <LastName gate:gateId="53">Van Straalen</LastName>
+                    <ForeName gate:gateId="54">Jan P</ForeName>
+                    <Initials gate:gateId="55">JP</Initials></Author>
+                
+                <Author gate:gateId="56" ValidYN="Y">
+                    <LastName gate:gateId="57">Fischer</LastName>
+                    <ForeName gate:gateId="58">Johan</ForeName>
+                    <Initials gate:gateId="59">J</Initials></Author>
+                
+                <Author gate:gateId="60" ValidYN="Y">
+                    <LastName gate:gateId="61">Groenink</LastName>
+                    <ForeName gate:gateId="62">Maarten</ForeName>
+                    <Initials gate:gateId="63">M</Initials></Author>
+                
+                <Author gate:gateId="64" ValidYN="Y">
+                    <LastName gate:gateId="65">Bilodeau</LastName>
+                    <ForeName gate:gateId="66">Luc</ForeName>
+                    <Initials gate:gateId="67">L</Initials></Author>
+                
+                <Author gate:gateId="68" ValidYN="Y">
+                    <LastName gate:gateId="69">Tijssen</LastName>
+                    <ForeName gate:gateId="70">Jan G P</ForeName>
+                    <Initials gate:gateId="71">JG</Initials></Author>
+                
+                <Author gate:gateId="72" ValidYN="Y">
+                    <LastName gate:gateId="73">Krucoff</LastName>
+                    <ForeName gate:gateId="74">Mitchell W</ForeName>
+                    <Initials gate:gateId="75">MW</Initials></Author>
+                
+                <Author gate:gateId="76" ValidYN="Y">
+                    <LastName gate:gateId="77">De Winter</LastName>
+                    <ForeName gate:gateId="78">Robbert J</ForeName>
+                    <Initials gate:gateId="79">RJ</Initials></Author></AuthorList>
+                
+            
+            <Language gate:gateId="80">eng</Language>
+            <PublicationTypeList gate:gateId="81">
+                <PublicationType gate:gateId="82">Comparative Study</PublicationType>
+                <PublicationType gate:gateId="83">Journal Article</PublicationType>
+                <PublicationType gate:gateId="84">Multicenter Study</PublicationType>
+                <PublicationType gate:gateId="85">Randomized Controlled Trial</PublicationType></PublicationTypeList>
+            
+            <ArticleDate gate:gateId="86" DateType="Electronic">
+                <Year gate:gateId="87">2010</Year>
+                <Month gate:gateId="88">02</Month>
+                <Day gate:gateId="89">20</Day></ArticleDate></Article>
+            
+        
+        <MedlineJournalInfo gate:gateId="90">
+            <Country gate:gateId="91">United States</Country>
+            <MedlineTA gate:gateId="92">Am J Cardiol</MedlineTA>
+            <NlmUniqueID gate:gateId="93">0207277</NlmUniqueID>
+            <ISSNLinking gate:gateId="94">0002-9149</ISSNLinking></MedlineJournalInfo>
+        
+        <ChemicalList gate:gateId="95">
+            <Chemical gate:gateId="96">
+                <RegistryNumber gate:gateId="97">0</RegistryNumber>
+                <NameOfSubstance gate:gateId="98">Biological Markers</NameOfSubstance></Chemical>
+            
+            <Chemical gate:gateId="99">
+                <RegistryNumber gate:gateId="100">0</RegistryNumber>
+                <NameOfSubstance gate:gateId="101">Peptide Fragments</NameOfSubstance></Chemical>
+            
+            <Chemical gate:gateId="102">
+                <RegistryNumber gate:gateId="103">0</RegistryNumber>
+                <NameOfSubstance gate:gateId="104">pro-brain natriuretic peptide (1-76)</NameOfSubstance></Chemical>
+            
+            <Chemical gate:gateId="105">
+                <RegistryNumber gate:gateId="106">114471-18-0</RegistryNumber>
+                <NameOfSubstance gate:gateId="107">Natriuretic Peptide, Brain</NameOfSubstance></Chemical>
+            
+            <Chemical gate:gateId="108">
+                <RegistryNumber gate:gateId="109">9007-41-4</RegistryNumber>
+                <NameOfSubstance gate:gateId="110">C-Reactive Protein</NameOfSubstance></Chemical>
+            
+            <Chemical gate:gateId="111">
+                <RegistryNumber gate:gateId="112">EC 2.7.3.2</RegistryNumber>
+                <NameOfSubstance gate:gateId="113">Creatine Kinase, BB Form</NameOfSubstance></Chemical></ChemicalList>
+            
+        
+        <CitationSubset gate:gateId="114">AIM</CitationSubset>
+        <CitationSubset gate:gateId="115">IM</CitationSubset>
+        <MeshHeadingList gate:gateId="116">
+            <MeshHeading gate:gateId="117">
+                <DescriptorName gate:gateId="118" MajorTopicYN="N">Angioplasty, Balloon, Coronary</DescriptorName>
+                <QualifierName gate:gateId="119" MajorTopicYN="Y">methods</QualifierName></MeshHeading>
+            
+            <MeshHeading gate:gateId="120">
+                <DescriptorName gate:gateId="121" MajorTopicYN="N">Anterior Wall Myocardial Infarction</DescriptorName>
+                <QualifierName gate:gateId="122" MajorTopicYN="Y">blood</QualifierName>
+                <QualifierName gate:gateId="123" MajorTopicYN="N">diagnosis</QualifierName>
+                <QualifierName gate:gateId="124" MajorTopicYN="N">therapy</QualifierName></MeshHeading>
+            
+            <MeshHeading gate:gateId="125">
+                <DescriptorName gate:gateId="126" MajorTopicYN="N">Biological Markers</DescriptorName>
+                <QualifierName gate:gateId="127" MajorTopicYN="N">blood</QualifierName></MeshHeading>
+            
+            <MeshHeading gate:gateId="128">
+                <DescriptorName gate:gateId="129" MajorTopicYN="N">C-Reactive Protein</DescriptorName>
+                <QualifierName gate:gateId="130" MajorTopicYN="N">metabolism</QualifierName></MeshHeading>
+            
+            <MeshHeading gate:gateId="131">
+                <DescriptorName gate:gateId="132" MajorTopicYN="N">Creatine Kinase, BB Form</DescriptorName>
+                <QualifierName gate:gateId="133" MajorTopicYN="N">blood</QualifierName></MeshHeading>
+            
+            <MeshHeading gate:gateId="134">
+                <DescriptorName gate:gateId="135" MajorTopicYN="Y">Electrocardiography</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="136">
+                <DescriptorName gate:gateId="137" MajorTopicYN="N">Female</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="138">
+                <DescriptorName gate:gateId="139" MajorTopicYN="N">Follow-Up Studies</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="140">
+                <DescriptorName gate:gateId="141" MajorTopicYN="N">Humans</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="142">
+                <DescriptorName gate:gateId="143" MajorTopicYN="N">Magnetic Resonance Imaging</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="144">
+                <DescriptorName gate:gateId="145" MajorTopicYN="N">Male</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="146">
+                <DescriptorName gate:gateId="147" MajorTopicYN="N">Middle Aged</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="148">
+                <DescriptorName gate:gateId="149" MajorTopicYN="N">Myocardial Infarction</DescriptorName>
+                <QualifierName gate:gateId="150" MajorTopicYN="Y">blood</QualifierName>
+                <QualifierName gate:gateId="151" MajorTopicYN="N">diagnosis</QualifierName>
+                <QualifierName gate:gateId="152" MajorTopicYN="N">therapy</QualifierName></MeshHeading>
+            
+            <MeshHeading gate:gateId="153">
+                <DescriptorName gate:gateId="154" MajorTopicYN="N">Natriuretic Peptide, Brain</DescriptorName>
+                <QualifierName gate:gateId="155" MajorTopicYN="Y">blood</QualifierName></MeshHeading>
+            
+            <MeshHeading gate:gateId="156">
+                <DescriptorName gate:gateId="157" MajorTopicYN="Y">Patient Admission</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="158">
+                <DescriptorName gate:gateId="159" MajorTopicYN="N">Peptide Fragments</DescriptorName>
+                <QualifierName gate:gateId="160" MajorTopicYN="Y">blood</QualifierName></MeshHeading>
+            
+            <MeshHeading gate:gateId="161">
+                <DescriptorName gate:gateId="162" MajorTopicYN="N">Predictive Value of Tests</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="163">
+                <DescriptorName gate:gateId="164" MajorTopicYN="N">Prognosis</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="165">
+                <DescriptorName gate:gateId="166" MajorTopicYN="N">Stroke Volume</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="167">
+                <DescriptorName gate:gateId="168" MajorTopicYN="N">Ventricular Function, Left</DescriptorName>
+                <QualifierName gate:gateId="169" MajorTopicYN="Y">physiology</QualifierName></MeshHeading></MeshHeadingList></MedlineCitation>
+            
+        
+    
+    <PubmedData gate:gateId="170">
+        <History gate:gateId="171">
+            <PubMedPubDate gate:gateId="172" PubStatus="received">
+                <Year gate:gateId="173">2009</Year>
+                <Month gate:gateId="174">9</Month>
+                <Day gate:gateId="175">24</Day></PubMedPubDate>
+            
+            <PubMedPubDate gate:gateId="176" PubStatus="revised">
+                <Year gate:gateId="177">2009</Year>
+                <Month gate:gateId="178">12</Month>
+                <Day gate:gateId="179">3</Day></PubMedPubDate>
+            
+            <PubMedPubDate gate:gateId="180" PubStatus="accepted">
+                <Year gate:gateId="181">2009</Year>
+                <Month gate:gateId="182">12</Month>
+                <Day gate:gateId="183">3</Day></PubMedPubDate>
+            
+            <PubMedPubDate gate:gateId="184" PubStatus="aheadofprint">
+                <Year gate:gateId="185">2010</Year>
+                <Month gate:gateId="186">2</Month>
+                <Day gate:gateId="187">20</Day></PubMedPubDate>
+            
+            <PubMedPubDate gate:gateId="188" PubStatus="entrez">
+                <Year gate:gateId="189">2010</Year>
+                <Month gate:gateId="190">4</Month>
+                <Day gate:gateId="191">13</Day>
+                <Hour gate:gateId="192">6</Hour>
+                <Minute gate:gateId="193">0</Minute></PubMedPubDate>
+            
+            <PubMedPubDate gate:gateId="194" PubStatus="pubmed">
+                <Year gate:gateId="195">2010</Year>
+                <Month gate:gateId="196">4</Month>
+                <Day gate:gateId="197">13</Day>
+                <Hour gate:gateId="198">6</Hour>
+                <Minute gate:gateId="199">0</Minute></PubMedPubDate>
+            
+            <PubMedPubDate gate:gateId="200" PubStatus="medline">
+                <Year gate:gateId="201">2010</Year>
+                <Month gate:gateId="202">6</Month>
+                <Day gate:gateId="203">16</Day>
+                <Hour gate:gateId="204">6</Hour>
+                <Minute gate:gateId="205">0</Minute></PubMedPubDate></History>
+            
+        
+        <PublicationStatus gate:gateId="206">ppublish</PublicationStatus>
+        <ArticleIdList gate:gateId="207">
+            <ArticleId gate:gateId="208" IdType="pii">S0002-9149(09)02831-8</ArticleId>
+            <ArticleId gate:gateId="209" IdType="doi">10.1016/j.amjcard.2009.12.003</ArticleId>
+            <ArticleId gate:gateId="210" IdType="pubmed">20381654</ArticleId></ArticleIdList></PubmedData></PubmedArticle>
+        
+    
+
+
+</PubmedArticleSet>

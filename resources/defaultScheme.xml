@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+  <AnnotationSchemeElements>
+    <schemeElement title="group">
+      <attribute>id</attribute>
+      <attribute>role</attribute>
+    </schemeElement>
+    <schemeElement title="threshold">
+    </schemeElement>
+    <schemeElement title="short">
+    </schemeElement>
+    <schemeElement title="outcome">
+      <attribute>id</attribute>
+      <attribute>type</attribute>
+    </schemeElement>
+    <schemeElement title="time">
+      <attribute>id</attribute>
+      <attribute>units</attribute>
+    </schemeElement>
+    <schemeElement title="gs">
+      <attribute>group</attribute>
+      <attribute>time</attribute>
+    </schemeElement>
+    <schemeElement title="on">
+      <attribute>group</attribute>
+      <attribute>outcome</attribute>
+      <attribute>time</attribute>
+    </schemeElement>
+    <schemeElement title="lost">
+      <attribute>group</attribute>
+      <attribute>time</attribute>
+    </schemeElement>
+    <schemeElement title="population">
+    </schemeElement>
+    <schemeElement title="age">
+    </schemeElement>
+    <schemeElement title="condition">
+    </schemeElement>
+    <schemeElement title="eventRate">
+    </schemeElement>
+  </AnnotationSchemeElements>
