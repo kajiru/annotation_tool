@@ -1,3 +1,4 @@
+import java.awt.Color;
 import java.util.*;
 
 public class Annotation{
@@ -9,19 +10,18 @@ public class Annotation{
 	private int id; 
 	private String plainAbstract; 
 	private Map<String, String> attributes;
-	private String color; //Change to color Object
+	private Color color; //Change to color Object
 
-	private static int indexSearchKey = 0; //Keeps track of the position right after the last added annotation.
+	private static int startSearchIndex = 0; //Keeps track of the position, in the abstract, to start searching for an annotation text.
 				
-	public Annotation(String type, String text, Map<String, String> attributes, String plainAbstract){
+	public Annotation(String type, String text, Map<String, String> attributes, Color color, String plainAbstract){
 		this.setType(type); 
 		this.setText(text);
 		this.setAttributes(attributes);
 		this.setPlainAbstract(plainAbstract);
 		this.setStart(); 
 		this.setEnd(); 
-		this.setColor(""); 
-		this.setIndexSearchKey();
+		this.setColor(color); 
 	}
 	
 	public void setText(String text){
@@ -95,7 +95,7 @@ public class Annotation{
 	 * @param start the start to set
 	 */
 	public void setStart() {
-		start = plainAbstract.indexOf(text, indexSearchKey);
+		start = plainAbstract.indexOf(text, startSearchIndex);
 	}
 
 	/**
@@ -112,16 +112,45 @@ public class Annotation{
 		end = start + text.length();
 	}
 	
-	public void setColor(String color){
+	public void setColor(Color color){
 		this.color = color; 
 	}
 	
-	public static int getIndexSearchKey(){
-		return indexSearchKey;
+	public Color getColor(){
+		return color;
 	}
 	
-	public void setIndexSearchKey(){
-		indexSearchKey = end;
+	public static int getStartSearchIndex(){
+		return startSearchIndex;
+	}
+	
+	public static void setStartSearchIndex(int i){
+		startSearchIndex = i;
+	}
+	
+	public String toString(){
+		String res = "";
+		res += "Type & Text: ";
+		res += getType();
+		res += " : "; 
+		res += getText(); 
+		res += "\nAttributes: {";
+		for(String key : attributes.keySet()){
+			res += key; 
+			res += "=";
+			res += attributes.get(key);
+			res += " | ";
+		}
+		res += "}";
+		res += "\nIndex: "; 
+		res += getStart(); 
+		res += "->";
+		res += getEnd();
+		res += "\nColor: ";
+		res += getColor();
+		res += "\n";
+		
+		return res; 
 	}
 	
 	
