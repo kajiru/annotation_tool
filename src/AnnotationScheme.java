@@ -14,27 +14,35 @@ public class AnnotationScheme {
 	private Map<String, ArrayList<String>> schemeElements; 
 	
 	public AnnotationScheme(String sourceFilename){
-		this.sourceFilename = sourceFilename;
-		this.schemeElements = new HashMap<String, ArrayList<String>>(); 
-		this.setNelements(0);  
-		loadScheme(); 
+		setSourceFilename(sourceFilename);
+		setSchemeElements();
+		this.setNelements(0);   
 	}
 	
-	private void loadScheme(){
+	public void setSourceFilename(String filename){
+		this.sourceFilename = filename; 
+	}
+	
+	public String getSourceFilename(){
+		return sourceFilename; 
+	}
+	
+	public void setSchemeElements(){
+		this.schemeElements = new HashMap<String, ArrayList<String>>(); 
 		try{
+			//TODO: make file path absolute
 			File inputFile = new File("resources/"+ this.sourceFilename);
 			SAXBuilder saxBuilder = new SAXBuilder(); 
 			Document document = saxBuilder.build(inputFile);
-			getSchemeElements(document);
+			extractSchemeElements(document);
 		}catch(JDOMException e){
 			e.printStackTrace();
 		}catch(IOException ioe){
 			ioe.printStackTrace();
 		}
-		 
 	}
 	
-	private void getSchemeElements(Document doc){ 
+	private void extractSchemeElements(Document doc){ 
 		Element rootElement = doc.getRootElement();
 		List<Element> children = rootElement.getChildren();
 		for(Element el : children){
@@ -45,7 +53,7 @@ public class AnnotationScheme {
 				attributes.add(attr.getValue());
 			}
 		    this.schemeElements.put(elementTitle, attributes);
-		    this.setNelements(this.getNelements() + 1); 
+		    setNelements(this.getNelements() + 1); 
 		}
 	}
 	
