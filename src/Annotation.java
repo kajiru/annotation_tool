@@ -13,7 +13,7 @@ public class Annotation{
 	private Color color; //Change to color Object
 
 	private static int startSearchIndex = 0; //Keeps track of the position, in the abstract, to start searching for an annotation text.
-				
+
 	public Annotation(String type, String text, Map<String, String> attributes, Color color, String plainAbstract){
 		this.setType(type); 
 		this.setText(text);
@@ -23,23 +23,34 @@ public class Annotation{
 		this.setEnd(); 
 		this.setColor(color); 
 	}
-	
+
+	//Adding Annotation from GUI
+	public Annotation(String type, String text, int start, int end, Map<String, String> attributes, Color color){
+		this.setType(type); 
+		this.setText(text);
+		this.setAttributes(attributes);
+		this.start = start; 
+		this.end = end;
+		this.setColor(color); 
+	}
+
+
 	public void setText(String text){
 		this.text = text;
 	}
-	
+
 	public String getText(){
 		return text;
 	}
-	
+
 	public void setAttributes(Map<String, String> attributes){
 		this.attributes = attributes;
 	}
-	
+
 	public Map<String, String> getAttributes(){
 		return attributes;
 	}
-	
+
 	/**
 	 * @return the plainAbstract
 	 */
@@ -68,7 +79,7 @@ public class Annotation{
 	public void setId(int id) {
 		this.id = id;
 	}
-	
+
 
 	/**
 	 * @return the type
@@ -111,37 +122,40 @@ public class Annotation{
 	public void setEnd() {
 		end = start + text.length();
 	}
-	
+
 	public void setColor(Color color){
 		this.color = color; 
 	}
-	
+
 	public Color getColor(){
 		return color;
 	}
-	
+
 	public static int getStartSearchIndex(){
 		return startSearchIndex;
 	}
-	
+
 	public static void setStartSearchIndex(int i){
 		startSearchIndex = i;
 	}
-	
+
 	public String toString(){
 		String res = "";
 		res += "Type & Text: ";
 		res += getType();
 		res += " : "; 
-		res += getText(); 
-		res += "\nAttributes: {";
-		for(String key : attributes.keySet()){
-			res += key; 
-			res += "=";
-			res += attributes.get(key);
-			res += " | ";
+		res += getText();
+		if(attributes != null){
+			res += "\nAttributes: {";
+			for(String key : attributes.keySet()){
+				res += key; 
+				res += "=";
+				res += attributes.get(key);
+				res += " | ";
+			}
+
+			res += "}";
 		}
-		res += "}";
 		res += "\nIndex: "; 
 		res += getStart(); 
 		res += "->";
@@ -149,10 +163,10 @@ public class Annotation{
 		res += "\nColor: ";
 		res += getColor();
 		res += "\n";
-		
+
 		return res; 
 	}
-	
-	
-		
+
+
+
 }

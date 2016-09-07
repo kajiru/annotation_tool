@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="windows-1252" ?>
-<PubmedArticleSet  gate:gateId="0" gate:annotMaxId="373" xmlns:gate="http://www.gate.ac.uk">
+<?xml version="1.0" encoding="UTF-8"?>
+<PubmedArticleSet xmlns:gate="http://www.gate.ac.uk" gate:gateId="0" gate:annotMaxId="373">
   <PubmedArticle gate:gateId="1"><MedlineCitation gate:gateId="2" Status="MEDLINE" Owner="NLM">
     <PMID gate:gateId="3" Version="1">20231034</PMID>
         <DateCreated gate:gateId="4">
@@ -18,7 +18,7 @@
             <Day gate:gateId="15">18</Day></DateRevised>
 
         <Article gate:gateId="16" PubModel="Print-Electronic">
-            <Journal gate:gateId="17">
+            <Abstract><AbstractText>In low-risk <population>patients</population> , the <group role="experiment" id="0">zotarolimus-eluting stent</group> has been shown to reduce rates of restenosis without increasing the risk of stent thrombosis. We compared the efficacy and safety of the <group role="experiment" id="0">zotarolimus-eluting stent</group> versus the <group role="control" id="1">sirolimus-eluting stent</group> in <population>patients</population> <condition>with coronary artery disease who were receiving routine clinical care with no direct follow-up</condition>.We did a single-blind, all-comer superiority trial in adult <population>patients</population> <condition>with chronic stable coronary artery disease or acute coronary syndromes</condition> , and <condition>at least one target lesion</condition>. <population>Patients</population> were treated at one of five percutaneous coronary intervention centres between January, 2006, and August, 2007. Computer-generated block randomisation and a telephone allocation service were used to randomly assign <population>patients</population> to receive the <group role="experiment" id="0">zotarolimus-eluting</group> or the <group role="control" id="1">sirolimus-eluting stent</group> . Data for follow-up were obtained from national Danish administrative and health-care registries. <short>The primary endpoint</short> was a composite of major adverse cardiac events within The primary endpoint was a composite of major adverse cardiac events within <outcome id="0" type="bad">The primary endpoint was a composite of major adverse cardiac events within <time id="0">9 months</time> : cardiac death, myocardial infarction, and target vessel revascularisation</outcome> . Intention-to-treat analyses were done at <time id="0" units="months">9-month</time> and <time id="1" units="months">18-month</time> follow-up. This trial is registered with ClinicalTrials.gov, number NCT00660478.<gs group="0">1162</gs> <population>patients</population> (1619 lesions) were assigned to receive the <group role="experiment" id="0">zotarolimus-eluting stent</group> , and <gs group="1">1170</gs> <population>patients</population> (1611 lesions) to receive the <group role="control" id="1">sirolimus-eluting stent</group> . 67 <population>patients</population> (72 lesions) had stent failure, and <lost group="1">six</lost> <population>patients</population> were lost to follow-up. All randomly assigned <population>patients</population> were included in analyses at <time id="0" units="months">9-month</time> follow-up; 2200 <population>patients</population> (94%) had completed <time id="1" units="months">18-month</time> follow-up by the time of our assessment. At <time id="0" units="months">9 months</time>, the <outcome id="0" type="bad">primary endpoint</outcome> had occurred in a higher proportion of <population>patients</population> treated with the <group role="experiment" id="0">zotarolimus-eluting stent</group> than in those treated with the <group role="control" id="1">sirolimus-eluting stent</group> ( <on time="0" outcome="0" group="0">72</on> [ <eventRate>6%</eventRate> ] vs <on time="0" outcome="0" group="1">34</on> [ <eventRate>3%</eventRate> ]; HR 2.15, 95% CI 1.43-3.23; p=0.0002). At <time id="1" units="months">18-month</time> follow-up, this difference was sustained ( <on time="1" outcome="0" group="0">113</on> [ <eventRate>10%</eventRate> ] vs <on time="1" outcome="0" group="1">53</on> [ <eventRate>5%</eventRate> ]; 2.19, 1.58-3.04; p&lt;0.0001). For <population>patients</population> receiving the <group role="experiment" id="0">zotarolimus-eluting stent</group> and those receiving the <group role="control" id="1">sirolimus-eluting stent</group> , <outcome id="1" type="bad">all cause-mortality</outcome> was similar at <time id="0" units="months">9-month</time> follow-up ( <on time="0" outcome="1" group="0">25</on> [ <eventRate>2%</eventRate> ] vs <on time="0" outcome="1" group="1">18</on> [ <eventRate>2%</eventRate> ]; 1.40, 0.76-2.56; p=0.28), but was significantly different at <time id="1" units="months">18-month</time> follow-up ( <on time="1" outcome="1" group="0">51</on> [ <eventRate>4%</eventRate> ] vs <on time="1" outcome="1" group="1">32</on> [ <eventRate>3%</eventRate> ]; 1.61, 1.03-2.50; p=0.035).The <group role="control" id="1">sirolimus-eluting stent</group> is superior to the <group role="experiment" id="0">zotarolimus-eluting stent</group> for <population>patients</population> <condition>receiving routine clinical care</condition>.Cordis and Medtronic.</AbstractText></Abstract><Journal gate:gateId="17">
                 <ISSN gate:gateId="18" IssnType="Electronic">1474-547X</ISSN>
                 <JournalIssue gate:gateId="19" CitedMedium="Internet">
                     <Volume gate:gateId="20">375</Volume>
@@ -36,13 +36,7 @@
             <Pagination gate:gateId="29">
                 <MedlinePgn gate:gateId="30">1090-9</MedlinePgn></Pagination>
 
-            <Abstract gate:gateId="31">
-                <AbstractText gate:gateId="32" Label="BACKGROUND" NlmCategory="BACKGROUND">In low-risk <population gate:gateId="324">patients</population> , the <group gate:gateId="296" id="0" role="experiment">zotarolimus-eluting stent</group> has been shown to reduce rates of restenosis without increasing the risk of stent thrombosis. We compared the efficacy and safety of the <group gate:gateId="297" id="0" role="experiment" safe.regex="true">zotarolimus-eluting stent</group> versus the <group gate:gateId="303" id="1" role="control">sirolimus-eluting stent</group> in <population gate:gateId="326" safe.regex="true">patients</population> <condition gate:gateId="360" id="0">with coronary artery disease who were receiving routine clinical care with no direct follow-up</condition>.</AbstractText>
-                <AbstractText gate:gateId="33" Label="METHODS" NlmCategory="METHODS">We did a single-blind, all-comer superiority trial in adult <population gate:gateId="327" safe.regex="true">patients</population> <condition gate:gateId="362" id="0">with chronic stable coronary artery disease or acute coronary syndromes</condition> , and <condition gate:gateId="358" id="1">at least one target lesion</condition>. <population gate:gateId="359" id="0">Patients</population> were treated at one of five percutaneous coronary intervention centres between January, 2006, and August, 2007. Computer-generated block randomisation and a telephone allocation service were used to randomly assign <population gate:gateId="328" safe.regex="true">patients</population> to receive the <group gate:gateId="363" id="0" role="experiment">zotarolimus-eluting</group> or the <group gate:gateId="304" id="1" role="control" safe.regex="true">sirolimus-eluting stent</group> . Data for follow-up were obtained from national Danish administrative and health-care registries. <outcome gate:gateId="353" id="0" type="bad" focus="primary"><short gate:gateId="370">The primary endpoint</short> was a composite of major adverse cardiac events within <time gate:gateId="315" id="0">9 months</time> : cardiac death, myocardial infarction, and target vessel revascularisation</outcome> . Intention-to-treat analyses were done at <time gate:gateId="365" id="0" units="months">9-month</time> and <time gate:gateId="316" id="1" units="months">18-month</time> follow-up. This trial is registered with ClinicalTrials.gov, number NCT00660478.</AbstractText>
-                <AbstractText gate:gateId="34" Label="FINDINGS" NlmCategory="RESULTS"><gs gate:gateId="310" group="0">1162</gs> <population gate:gateId="329" safe.regex="true">patients</population> (1619 lesions) were assigned to receive the <group gate:gateId="298" id="0" role="experiment" safe.regex="true">zotarolimus-eluting stent</group> , and <gs gate:gateId="311" group="1">1170</gs> <population gate:gateId="330" safe.regex="true">patients</population> (1611 lesions) to receive the <group gate:gateId="305" id="1" role="control" safe.regex="true">sirolimus-eluting stent</group> . 67 <population gate:gateId="331" safe.regex="true">patients</population> (72 lesions) had stent failure, and <lost gate:gateId="312" group="1">six</lost> <population gate:gateId="332" safe.regex="true">patients</population> were lost to follow-up. All randomly assigned <population gate:gateId="333" safe.regex="true">patients</population> were included in analyses at <time gate:gateId="366" id="0" units="months">9-month</time> follow-up; 2200 <population gate:gateId="334" safe.regex="true">patients</population> (94%) had completed <time gate:gateId="367" id="1" units="months">18-month</time> follow-up by the time of our assessment. At <time gate:gateId="368" id="0" units="months">9 months</time>, the <outcome gate:gateId="318" type="bad" id="0">primary endpoint</outcome> had occurred in a higher proportion of <population gate:gateId="335" safe.regex="true">patients</population> treated with the <group gate:gateId="299" id="0" role="experiment" safe.regex="true">zotarolimus-eluting stent</group> than in those treated with the <group gate:gateId="306" id="1" role="control" safe.regex="true">sirolimus-eluting stent</group> ( <on gate:gateId="320" group="0" outcome="0" time="0">72</on> [ <eventRate gate:gateId="343" group="0" outcome="0" time="0">6%</eventRate> ] vs <on gate:gateId="321" group="1" outcome="0" time="0">34</on> [ <eventRate gate:gateId="344" group="1" outcome="0" time="0">3%</eventRate> ]; HR 2.15, 95% CI 1.43-3.23; p=0.0002). At <time gate:gateId="369" id="1" units="months">18-month</time> follow-up, this difference was sustained ( <on gate:gateId="322" group="0" outcome="0" time="1">113</on> [ <eventRate gate:gateId="345" group="0" outcome="0" time="1">10%</eventRate> ] vs <on gate:gateId="323" group="1" outcome="0" time="1">53</on> [ <eventRate gate:gateId="346" group="1" outcome="0" time="1">5%</eventRate> ]; 2.19, 1.58-3.04; p&lt;0.0001). For <population gate:gateId="336" safe.regex="true">patients</population> receiving the <group gate:gateId="300" id="0" role="experiment" safe.regex="true">zotarolimus-eluting stent</group> and those receiving the <group gate:gateId="307" id="1" role="control" safe.regex="true">sirolimus-eluting stent</group> , <outcome gate:gateId="338" type="bad" id="1">all cause-mortality</outcome> was similar at <time gate:gateId="371" id="0" units="months">9-month</time> follow-up ( <on gate:gateId="339" group="0" outcome="1" time="0">25</on> [ <eventRate gate:gateId="347" group="0" outcome="1" time="0">2%</eventRate> ] vs <on gate:gateId="340" group="1" outcome="1" time="0">18</on> [ <eventRate gate:gateId="348" group="1" outcome="1" time="0">2%</eventRate> ]; 1.40, 0.76-2.56; p=0.28), but was significantly different at <time gate:gateId="372" id="1" units="months">18-month</time> follow-up ( <on gate:gateId="341" group="0" outcome="1" time="1">51</on> [ <eventRate gate:gateId="349" group="0" outcome="1" time="1">4%</eventRate> ] vs <on gate:gateId="342" group="1" outcome="1" time="1">32</on> [ <eventRate gate:gateId="350" group="1" outcome="1" time="1">3%</eventRate> ]; 1.61, 1.03-2.50; p=0.035).</AbstractText>
-                <AbstractText gate:gateId="35" Label="INTERPRETATION" NlmCategory="CONCLUSIONS">The <group gate:gateId="308" id="1" role="control" safe.regex="true">sirolimus-eluting stent</group> is superior to the <group gate:gateId="301" id="0" role="experiment" safe.regex="true">zotarolimus-eluting stent</group> for <population gate:gateId="337" safe.regex="true">patients</population> <condition gate:gateId="361" id="0">receiving routine clinical care</condition>.</AbstractText>
-                <AbstractText gate:gateId="36" Label="FUNDING" NlmCategory="BACKGROUND">Cordis and Medtronic.</AbstractText>
-                <CopyrightInformation gate:gateId="37">Copyright 2010 Elsevier Ltd. All rights reserved.</CopyrightInformation></Abstract>
+
 
             <Affiliation gate:gateId="38">Department of Cardiology, Aarhus University Hospital, Aalborg Hospital, Aalborg, Denmark.</Affiliation>
             <AuthorList gate:gateId="39" CompleteYN="Y" Type="authors">
@@ -83,11 +77,11 @@
 
                 <Author gate:gateId="68" ValidYN="Y">
                     <LastName gate:gateId="69">Christiansen</LastName>
-                    <ForeName gate:gateId="70">Evald Høj</ForeName>
+                    <ForeName gate:gateId="70">Evald HÃ¸j</ForeName>
                     <Initials gate:gateId="71">EH</Initials></Author>
 
                 <Author gate:gateId="72" ValidYN="Y">
-                    <LastName gate:gateId="73">Engstrøm</LastName>
+                    <LastName gate:gateId="73">EngstrÃ¸m</LastName>
                     <ForeName gate:gateId="74">Thomas</ForeName>
                     <Initials gate:gateId="75">T</Initials></Author>
 
@@ -108,16 +102,16 @@
 
                 <Author gate:gateId="88" ValidYN="Y">
                     <LastName gate:gateId="89">Hansen</LastName>
-                    <ForeName gate:gateId="90">Knud Nørregaard</ForeName>
+                    <ForeName gate:gateId="90">Knud NÃ¸rregaard</ForeName>
                     <Initials gate:gateId="91">KN</Initials></Author>
 
                 <Author gate:gateId="92" ValidYN="Y">
-                    <LastName gate:gateId="93">Abildstrøm</LastName>
+                    <LastName gate:gateId="93">AbildstrÃ¸m</LastName>
                     <ForeName gate:gateId="94">Steen Zabell</ForeName>
                     <Initials gate:gateId="95">SZ</Initials></Author>
 
                 <Author gate:gateId="96" ValidYN="Y">
-                    <LastName gate:gateId="97">Aarøe</LastName>
+                    <LastName gate:gateId="97">AarÃ¸e</LastName>
                     <ForeName gate:gateId="98">Jens</ForeName>
                     <Initials gate:gateId="99">J</Initials></Author>
 
@@ -132,7 +126,7 @@
                     <Initials gate:gateId="107">SD</Initials></Author>
 
                 <Author gate:gateId="108" ValidYN="Y">
-                    <LastName gate:gateId="109">Bøtker</LastName>
+                    <LastName gate:gateId="109">BÃ¸tker</LastName>
                     <ForeName gate:gateId="110">Hans Erik</ForeName>
                     <Initials gate:gateId="111">HE</Initials></Author>
 
@@ -143,7 +137,7 @@
 
                 <Author gate:gateId="116" ValidYN="Y">
                     <LastName gate:gateId="117">Johnsen</LastName>
-                    <ForeName gate:gateId="118">Søren Paaske</ForeName>
+                    <ForeName gate:gateId="118">SÃ¸ren Paaske</ForeName>
                     <Initials gate:gateId="119">SP</Initials></Author>
 
                 <Author gate:gateId="120" ValidYN="Y">
@@ -152,7 +146,7 @@
                     <Initials gate:gateId="123">LO</Initials></Author>
 
                 <Author gate:gateId="124" ValidYN="Y">
-                    <LastName gate:gateId="125">Sørensen</LastName>
+                    <LastName gate:gateId="125">SÃ¸rensen</LastName>
                     <ForeName gate:gateId="126">Henrik Toft</ForeName>
                     <Initials gate:gateId="127">HT</Initials></Author>
 
@@ -184,7 +178,7 @@
                 <PublicationType gate:gateId="146">Journal Article</PublicationType>
                 <PublicationType gate:gateId="147">Multicenter Study</PublicationType>
                 <PublicationType gate:gateId="148">Randomized Controlled Trial</PublicationType>
-                <PublicationType gate:gateId="149">Research Support, Non-U.S. Gov&apos;t</PublicationType></PublicationTypeList>
+                <PublicationType gate:gateId="149">Research Support, Non-U.S. Gov't</PublicationType></PublicationTypeList>
 
             <ArticleDate gate:gateId="150" DateType="Electronic">
                 <Year gate:gateId="151">2010</Year>
@@ -286,7 +280,7 @@
                 <Initials gate:gateId="221">K</Initials></Investigator>
 
             <Investigator gate:gateId="222" ValidYN="Y">
-                <LastName gate:gateId="223">Nørgaard</LastName>
+                <LastName gate:gateId="223">NÃ¸rgaard</LastName>
                 <ForeName gate:gateId="224">B L</ForeName>
                 <Initials gate:gateId="225">BL</Initials></Investigator>
 
@@ -306,7 +300,7 @@
                 <Initials gate:gateId="237">SP</Initials></Investigator>
 
             <Investigator gate:gateId="238" ValidYN="Y">
-                <LastName gate:gateId="239">Sørensen</LastName>
+                <LastName gate:gateId="239">SÃ¸rensen</LastName>
                 <ForeName gate:gateId="240">H T</ForeName>
                 <Initials gate:gateId="241">HT</Initials></Investigator>
 

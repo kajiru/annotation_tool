@@ -1,33 +1,45 @@
 <?xml version="1.0"?>
   <AnnotationSchemeElements>
     <schemeElement title="group">
-      <attribute>id</attribute>
-      <attribute>role</attribute>
+      <attribute name="id"></attribute>
+      <attribute name="role">
+          <option name="experiment"></option>
+          <option name="control"></option>
+      </attribute>
     </schemeElement>
     <schemeElement title="threshold">
     </schemeElement>
     <schemeElement title="short">
     </schemeElement>
     <schemeElement title="outcome">
-      <attribute>id</attribute>
-      <attribute>type</attribute>
+      <attribute name="id"></attribute>
+      <attribute name="type">
+        <option name="good"></option>
+        <option name="bad"></option>
+      </attribute>
     </schemeElement>
     <schemeElement title="time">
-      <attribute>id</attribute>
-      <attribute>units</attribute>
+      <attribute name="id"></attribute>
+      <attribute name="units">
+        <option name="hours"></option>
+        <option name="days"></option>
+        <option name="weeks"></option>
+        <option name="months"></option>
+        <option name="years"></option>
+      </attribute>
     </schemeElement>
     <schemeElement title="gs">
-      <attribute>group</attribute>
-      <attribute>time</attribute>
+      <attribute name="group"></attribute>
+      <attribute name="time"></attribute>
     </schemeElement>
     <schemeElement title="on">
-      <attribute>group</attribute>
-      <attribute>outcome</attribute>
-      <attribute>time</attribute>
+      <attribute name="group"></attribute>
+      <attribute name="outcome"></attribute>
+      <attribute name="time"></attribute>
     </schemeElement>
     <schemeElement title="lost">
-      <attribute>group</attribute>
-      <attribute>time</attribute>
+      <attribute name="group"></attribute>
+      <attribute name="time"></attribute>
     </schemeElement>
     <schemeElement title="population">
     </schemeElement>

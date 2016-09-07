@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<PubmedArticleSet  gate:gateId="0" gate:annotMaxId="238" xmlns:gate="http://www.gate.ac.uk"><PubmedArticle gate:gateId="1"><MedlineCitation gate:gateId="2" Status="MEDLINE" Owner="NLM"><PMID gate:gateId="3" Version="1">20308618</PMID>
+        <DateCreated gate:gateId="4">
+            <Year gate:gateId="5">2010</Year>
+            <Month gate:gateId="6">04</Month>
+            <Day gate:gateId="7">06</Day></DateCreated>
+        
+        <DateCompleted gate:gateId="8">
+            <Year gate:gateId="9">2010</Year>
+            <Month gate:gateId="10">04</Month>
+            <Day gate:gateId="11">23</Day></DateCompleted>
+        
+        <DateRevised gate:gateId="12">
+            <Year gate:gateId="13">2011</Year>
+            <Month gate:gateId="14">01</Month>
+            <Day gate:gateId="15">06</Day></DateRevised>
+        
+        <Article gate:gateId="16" PubModel="Print-Electronic">
+            <Journal gate:gateId="17">
+                <ISSN gate:gateId="18" IssnType="Electronic">1524-4539</ISSN>
+                <JournalIssue gate:gateId="19" CitedMedium="Internet">
+                    <Volume gate:gateId="20">121</Volume>
+                    <Issue gate:gateId="21">13</Issue>
+                    <PubDate gate:gateId="22">
+                        <Year gate:gateId="23">2010</Year>
+                        <Month gate:gateId="24">Apr</Month>
+                        <Day gate:gateId="25">6</Day></PubDate></JournalIssue>
+                    
+                
+                <Title gate:gateId="26">Circulation</Title>
+                <ISOAbbreviation gate:gateId="27">Circulation</ISOAbbreviation></Journal>
+            
+            <ArticleTitle gate:gateId="28"><group gate:gateId="211" id="0" role="experiment">Primary angioplasty</group> versus <group gate:gateId="210" id="1" role="control">fibrinolysis</group> <condition gate:gateId="237" id="0">in acute myocardial infarction</condition>: long-term follow-up in the Danish acute myocardial infarction 2 trial.</ArticleTitle>
+            <Pagination gate:gateId="29">
+                <MedlinePgn gate:gateId="30">1484-91</MedlinePgn></Pagination>
+            
+            <Abstract gate:gateId="31">
+                <AbstractText gate:gateId="32" Label="BACKGROUND" NlmCategory="BACKGROUND">The Danish Acute Myocardial Infarction 2 (DANAMI-2) study found that <group gate:gateId="212" id="0" role="experiment">primary angioplasty (primary percutaneous coronary intervention [<short gate:gateId="213">pPCI</short>])</group> compared with <group gate:gateId="214" id="1" role="control">fibrinolysis</group> reduced 30-day adverse events in <population gate:gateId="202">patients</population> <condition gate:gateId="171" id="0">with ST-segment elevation myocardial infarction</condition> . The present study investigated whether the benefit of <group gate:gateId="229" id="0" role="experiment">pPCI</group> was maintained at a long-term follow-up.</AbstractText>
+                <AbstractText gate:gateId="33" Label="METHODS AND RESULTS" NlmCategory="RESULTS">We randomly assigned 1572 <population gate:gateId="170"><population gate:gateId="203">patients</population></population> <condition gate:gateId="169" id="0">with ST-segment elevation myocardial infarction</condition> -1129 patients at referral hospitals and 443 <population gate:gateId="204" safe.regex="true">patients</population> at invasive hospitals-to <group gate:gateId="215" id="0" role="experiment">pPCI</group> or <group gate:gateId="216" id="1" role="control">fibrinolysis</group>. Median time from randomization to arrival in the catheterization laboratory for <population gate:gateId="205" safe.regex="true">patients</population> admitted to <group gate:gateId="176" id="0" role="experiment">referral hospitals</group> was 67 minutes, with 96% of <population gate:gateId="201">patients</population> arriving in the catheterization laboratory within 120 minutes. The primary study end point was a <outcome gate:gateId="193" id="2" type="bad" focus="primary">composite</outcome> of <outcome gate:gateId="192" id="0" type="bad" focus="primary">death</outcome> or <outcome gate:gateId="191" id="1" type="bad" focus="primary">reinfarction</outcome> . Median follow-up time was 7.8 years. For the primary end point, <time gate:gateId="195" id="0" units="years">8 -year</time> <outcome gate:gateId="194" id="2" type="bad" focus="primary">cumulative incidence</outcome> (1-Kaplan-Meier) was <eventRate gate:gateId="184" group="0" outcome="2">34.8%</eventRate> in the <group gate:gateId="178" id="0" role="experiment">pPCI group</group> and <eventRate gate:gateId="185" group="1" outcome="2">41.3%</eventRate> in the<group gate:gateId="179" id="1" role="control"> fibrinolysis group</group> (hazard ratio, 0.78; 95% confidence interval, 0.66 to 0.92). <outcome gate:gateId="180" id="1" type="bad" focus="primary">Reinfarction rates</outcome> were reduced in the <group gate:gateId="181" id="0" role="experiment">pPCI group</group> ( <eventRate gate:gateId="182" group="0" outcome="1">11.7%</eventRate> versus <eventRate gate:gateId="183" group="1" outcome="1">18.5%</eventRate> ; hazard ratio, 0.60; 95% confidence interval, 0.46 to 0.77). Among <population gate:gateId="207" safe.regex="true">patients</population> randomized at referral hospitals, <group gate:gateId="217" id="0" role="experiment">pPCI</group> reduced <outcome gate:gateId="233" type="bad" id="1">reinfarction</outcome> (13% versus 18.5%; hazard ratio, 0.66; 95% confidence interval, 0.49 to 0.89) and <outcome gate:gateId="230" type="bad" id="0">mortality</outcome> (<eventRate gate:gateId="231" group="0" outcome="0" time="0">26.7%</eventRate> versus <eventRate gate:gateId="232" group="1" outcome="0" time="0">33.3%</eventRate>; hazard ratio, 0.78; 95% confidence interval, 0.63 to 0.97).</AbstractText>
+                <AbstractText gate:gateId="34" Label="CONCLUSIONS" NlmCategory="CONCLUSIONS">The benefit of <group gate:gateId="218" id="0" role="experiment">pPCI</group> over <group gate:gateId="219" id="1" role="control">fibrinolysis</group> was maintained at a long-term follow-up. <group gate:gateId="220" id="0" role="experiment">pPCI</group> reduced the risk of <outcome gate:gateId="234" type="bad" id="1">reinfarction</outcome> in the overall cohort and reduced <outcome gate:gateId="235" type="bad" id="1">reinfarction</outcome> and <outcome gate:gateId="236" type="bad" id="0">mortality</outcome> among <population gate:gateId="208" safe.regex="true">patients</population> randomized at referral hospitals. This result reinforces that <group gate:gateId="221" id="0" role="experiment">pPCI</group> should be offered to <condition gate:gateId="222" id="0">ST-segment elevation myocardial infarction</condition> <population gate:gateId="209" safe.regex="true">patients</population> when interhospital transport to an invasive hospital can be completed within 120 minutes.</AbstractText></Abstract>
+            
+            <Affiliation gate:gateId="35">Department of Cardiology, Aarhus University Hospital, Skejby, Brendstrupgaardsvej, DK-8200 Aarhus N, Denmark.</Affiliation>
+            <AuthorList gate:gateId="36" CompleteYN="Y" Type="authors">
+                <Author gate:gateId="37" ValidYN="Y">
+                    <LastName gate:gateId="38">Nielsen</LastName>
+                    <ForeName gate:gateId="39">Peter H</ForeName>
+                    <Initials gate:gateId="40">PH</Initials></Author>
+                
+                <Author gate:gateId="41" ValidYN="Y">
+                    <LastName gate:gateId="42">Maeng</LastName>
+                    <ForeName gate:gateId="43">Michael</ForeName>
+                    <Initials gate:gateId="44">M</Initials></Author>
+                
+                <Author gate:gateId="45" ValidYN="Y">
+                    <LastName gate:gateId="46">Busk</LastName>
+                    <ForeName gate:gateId="47">Martin</ForeName>
+                    <Initials gate:gateId="48">M</Initials></Author>
+                
+                <Author gate:gateId="49" ValidYN="Y">
+                    <LastName gate:gateId="50">Mortensen</LastName>
+                    <ForeName gate:gateId="51">Leif S</ForeName>
+                    <Initials gate:gateId="52">LS</Initials></Author>
+                
+                <Author gate:gateId="53" ValidYN="Y">
+                    <LastName gate:gateId="54">Kristensen</LastName>
+                    <ForeName gate:gateId="55">Steen D</ForeName>
+                    <Initials gate:gateId="56">SD</Initials></Author>
+                
+                <Author gate:gateId="57" ValidYN="Y">
+                    <LastName gate:gateId="58">Nielsen</LastName>
+                    <ForeName gate:gateId="59">Torsten T</ForeName>
+                    <Initials gate:gateId="60">TT</Initials></Author>
+                
+                <Author gate:gateId="61" ValidYN="Y">
+                    <LastName gate:gateId="62">Andersen</LastName>
+                    <ForeName gate:gateId="63">Henning R</ForeName>
+                    <Initials gate:gateId="64">HR</Initials></Author>
+                
+                <Author gate:gateId="65" ValidYN="Y">
+                    <CollectiveName gate:gateId="66">DANAMI-2 Investigators</CollectiveName></Author></AuthorList>
+                
+            
+            <Language gate:gateId="67">eng</Language>
+            <PublicationTypeList gate:gateId="68">
+                <PublicationType gate:gateId="69">Comparative Study</PublicationType>
+                <PublicationType gate:gateId="70">Journal Article</PublicationType>
+                <PublicationType gate:gateId="71">Randomized Controlled Trial</PublicationType>
+                <PublicationType gate:gateId="72">Research Support, Non-U.S. Gov&apos;t</PublicationType></PublicationTypeList>
+            
+            <ArticleDate gate:gateId="73" DateType="Electronic">
+                <Year gate:gateId="74">2010</Year>
+                <Month gate:gateId="75">03</Month>
+                <Day gate:gateId="76">22</Day></ArticleDate></Article>
+            
+        
+        <MedlineJournalInfo gate:gateId="77">
+            <Country gate:gateId="78">United States</Country>
+            <MedlineTA gate:gateId="79">Circulation</MedlineTA>
+            <NlmUniqueID gate:gateId="80">0147763</NlmUniqueID>
+            <ISSNLinking gate:gateId="81">0009-7322</ISSNLinking></MedlineJournalInfo>
+        
+        <ChemicalList gate:gateId="82">
+            <Chemical gate:gateId="83">
+                <RegistryNumber gate:gateId="84">0</RegistryNumber>
+                <NameOfSubstance gate:gateId="85">Fibrinolytic Agents</NameOfSubstance></Chemical>
+            
+            <Chemical gate:gateId="86">
+                <RegistryNumber gate:gateId="87">EC 3.4.21.68</RegistryNumber>
+                <NameOfSubstance gate:gateId="88">Tissue Plasminogen Activator</NameOfSubstance></Chemical></ChemicalList>
+            
+        
+        <CitationSubset gate:gateId="89">AIM</CitationSubset>
+        <CitationSubset gate:gateId="90">IM</CitationSubset>
+        <CommentsCorrectionsList gate:gateId="91">
+            <CommentsCorrections gate:gateId="92" RefType="CommentIn">
+                <RefSource gate:gateId="93">Circulation. 2010 Dec 21;122(25):e640; author reply e641</RefSource>
+                <PMID gate:gateId="94" Version="1">21173360</PMID></CommentsCorrections>
+            
+            <CommentsCorrections gate:gateId="95" RefType="CommentIn">
+                <RefSource gate:gateId="96">Evid Based Med. 2010 Oct;15(5):145-6</RefSource>
+                <PMID gate:gateId="97" Version="1">20688845</PMID></CommentsCorrections></CommentsCorrectionsList>
+            
+        
+        <MeshHeadingList gate:gateId="98">
+            <MeshHeading gate:gateId="99">
+                <DescriptorName gate:gateId="100" MajorTopicYN="N">Aged</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="101">
+                <DescriptorName gate:gateId="102" MajorTopicYN="Y">Angioplasty, Balloon, Coronary</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="103">
+                <DescriptorName gate:gateId="104" Type="Geographic" MajorTopicYN="N">Denmark</DescriptorName>
+                <QualifierName gate:gateId="105" MajorTopicYN="N">epidemiology</QualifierName></MeshHeading>
+            
+            <MeshHeading gate:gateId="106">
+                <DescriptorName gate:gateId="107" MajorTopicYN="N">Emergency Medical Services</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="108">
+                <DescriptorName gate:gateId="109" MajorTopicYN="N">Female</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="110">
+                <DescriptorName gate:gateId="111" MajorTopicYN="N">Fibrinolysis</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="112">
+                <DescriptorName gate:gateId="113" MajorTopicYN="N">Fibrinolytic Agents</DescriptorName>
+                <QualifierName gate:gateId="114" MajorTopicYN="Y">therapeutic use</QualifierName></MeshHeading>
+            
+            <MeshHeading gate:gateId="115">
+                <DescriptorName gate:gateId="116" MajorTopicYN="N">Follow-Up Studies</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="117">
+                <DescriptorName gate:gateId="118" MajorTopicYN="N">Humans</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="119">
+                <DescriptorName gate:gateId="120" MajorTopicYN="N">Male</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="121">
+                <DescriptorName gate:gateId="122" MajorTopicYN="N">Middle Aged</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="123">
+                <DescriptorName gate:gateId="124" MajorTopicYN="N">Myocardial Infarction</DescriptorName>
+                <QualifierName gate:gateId="125" MajorTopicYN="Y">drug therapy</QualifierName>
+                <QualifierName gate:gateId="126" MajorTopicYN="N">mortality</QualifierName>
+                <QualifierName gate:gateId="127" MajorTopicYN="Y">therapy</QualifierName></MeshHeading>
+            
+            <MeshHeading gate:gateId="128">
+                <DescriptorName gate:gateId="129" MajorTopicYN="N">Recurrence</DescriptorName>
+                <QualifierName gate:gateId="130" MajorTopicYN="N">prevention &amp; control</QualifierName></MeshHeading>
+            
+            <MeshHeading gate:gateId="131">
+                <DescriptorName gate:gateId="132" MajorTopicYN="N">Risk Factors</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="133">
+                <DescriptorName gate:gateId="134" MajorTopicYN="N">Time Factors</DescriptorName></MeshHeading>
+            
+            <MeshHeading gate:gateId="135">
+                <DescriptorName gate:gateId="136" MajorTopicYN="N">Tissue Plasminogen Activator</DescriptorName>
+                <QualifierName gate:gateId="137" MajorTopicYN="Y">therapeutic use</QualifierName></MeshHeading>
+            
+            <MeshHeading gate:gateId="138">
+                <DescriptorName gate:gateId="139" MajorTopicYN="N">Treatment Outcome</DescriptorName></MeshHeading></MeshHeadingList></MedlineCitation>
+            
+        
+    
+    <PubmedData gate:gateId="140">
+        <History gate:gateId="141">
+            <PubMedPubDate gate:gateId="142" PubStatus="aheadofprint">
+                <Year gate:gateId="143">2010</Year>
+                <Month gate:gateId="144">3</Month>
+                <Day gate:gateId="145">22</Day></PubMedPubDate>
+            
+            <PubMedPubDate gate:gateId="146" PubStatus="entrez">
+                <Year gate:gateId="147">2010</Year>
+                <Month gate:gateId="148">3</Month>
+                <Day gate:gateId="149">24</Day>
+                <Hour gate:gateId="150">6</Hour>
+                <Minute gate:gateId="151">0</Minute></PubMedPubDate>
+            
+            <PubMedPubDate gate:gateId="152" PubStatus="pubmed">
+                <Year gate:gateId="153">2010</Year>
+                <Month gate:gateId="154">3</Month>
+                <Day gate:gateId="155">24</Day>
+                <Hour gate:gateId="156">6</Hour>
+                <Minute gate:gateId="157">0</Minute></PubMedPubDate>
+            
+            <PubMedPubDate gate:gateId="158" PubStatus="medline">
+                <Year gate:gateId="159">2010</Year>
+                <Month gate:gateId="160">4</Month>
+                <Day gate:gateId="161">24</Day>
+                <Hour gate:gateId="162">6</Hour>
+                <Minute gate:gateId="163">0</Minute></PubMedPubDate></History>
+            
+        
+        <PublicationStatus gate:gateId="164">ppublish</PublicationStatus>
+        <ArticleIdList gate:gateId="165">
+            <ArticleId gate:gateId="166" IdType="pii">CIRCULATIONAHA.109.873224</ArticleId>
+            <ArticleId gate:gateId="167" IdType="doi">10.1161/CIRCULATIONAHA.109.873224</ArticleId>
+            <ArticleId gate:gateId="168" IdType="pubmed">20308618</ArticleId></ArticleIdList></PubmedData></PubmedArticle>
+        
+    
+
+
+</PubmedArticleSet>
