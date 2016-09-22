@@ -57,16 +57,16 @@ public class XmlFile {
 	
 	//File chooser to help select a source file //TODO: Revisit
 	public static File selectSrcFile(){
-//		JFileChooser fileChooser = new JFileChooser();
-//		fileChooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
-//		fileChooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
-//		int result = fileChooser.showOpenDialog(fileChooser);
-//		if (result == JFileChooser.APPROVE_OPTION) {
-		    File selectedFile = new File("resources/sampleInput.xml");
-		    		//fileChooser.getSelectedFile();
+		JFileChooser fileChooser = new JFileChooser();
+		fileChooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
+		fileChooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
+		int result = fileChooser.showOpenDialog(fileChooser);
+		if (result == JFileChooser.APPROVE_OPTION) {
+		    File selectedFile = fileChooser.getSelectedFile();
+		    		//new File("resources/sampleInput.xml");	
 		    return selectedFile; 
-		//}
-		//return null; 
+		}
+		return null; 
 	}
 	
 	public void setSrcFile(File srcFile){

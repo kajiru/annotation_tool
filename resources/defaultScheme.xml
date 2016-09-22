@@ -42,6 +42,7 @@
       <attribute name="time"></attribute>
     </schemeElement>
     <schemeElement title="population">
+      <attribute name="id"></attribute>
     </schemeElement>
     <schemeElement title="age">
     </schemeElement>

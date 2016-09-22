@@ -351,12 +351,4 @@ public class Abstract {
 	public void editAnnotation(Annotation annotation){
 		
 	}
-
-
-
-
-
-
-
-
 }

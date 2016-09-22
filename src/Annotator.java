@@ -1,18 +1,28 @@
+/*  _                      _        _   _               _____           _ 
+   / \   _ __  _ __   ___ | |_ __ _| |_(_) ___  _ __   |_   _|__   ___ | |
+  / _ \ | '_ \| '_ \ / _ \| __/ _` | __| |/ _ \| '_ \    | |/ _ \ / _ \| |
+ / ___ \| | | | | | | (_) | || (_| | |_| | (_) | | | |   | | (_) | (_) | |
+/_/   \_\_| |_|_| |_|\___/ \__\__,_|\__|_|\___/|_| |_|   |_|\___/ \___/|_|
+ 
+*/
+
+/**
+ * Author: Jasper Kajiru
+ * ---------------------
+ * This is the main class in the program. It initializes 
+ * the GUI and sets everything up
+ */
 
 import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
-import java.util.Vector;
 
 import javax.swing.BoxLayout;
-import javax.swing.JCheckBoxMenuItem;
-import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JMenu;
@@ -20,8 +30,11 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JRadioButtonMenuItem;
+import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
+import javax.swing.border.EmptyBorder;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.DefaultHighlighter;
 import javax.swing.text.Highlighter;
@@ -30,36 +43,35 @@ import javax.swing.text.Highlighter.HighlightPainter;
 
 import org.jdom2.Element;
 
-
 public class Annotator implements AnnotatorConstants  {
 
 	BorderLayout mainLayout = new BorderLayout();
 	JMenuBar menuBar; 
 	JMenu menu, submenu; 
 	JMenuItem menuItem; 
-	JRadioButtonMenuItem rbMenuItem;
-	JCheckBoxMenuItem cbMenuItem;
 
 	private AnnotationScheme annotationScheme = null; 
 	private Abstract currentAbstract; 
 	private XmlFile currentXMLFile; 
 	private Highlighter abstractTextAreahighlighter; 
-	private boolean getHighlight = true; //true = annotations are highlighted in the abstract textArea
+	private boolean getHighlight = true; //true = annotations are highlighted 
 	private ArrayList<Highlight> abstractHighlightTags;
 	private String mainAnnotationFrameTitle;
-	private boolean isEdited = false; //Determines whether a document has been edited or not
+	private boolean isEdited = false; //is a document has been edited or not
+	private boolean isDevMode = false; //switch between production & development
 
 	private Set<String> highlightedAnnotationTypes; 
-	
+
 	//Main GUI components
 	private AnnotationFrameComponents mainAnnotationFrameComponents; 
 	private JFrame mainAnnotationFrame;
+	private JPanel mainContentPanel; 
 
 	//Five main sections within the BoarderLayout
 	private JPanel titlePane;
 	private AnnotationTypesGroup annotationTypesGroup = null; //Annotations Types List
 	private JTextArea abstractTextArea;
-	private JPanel rightPane;
+	private JPanel annotationDetailsPane;
 	private JPanel footerPane;
 
 
@@ -67,11 +79,35 @@ public class Annotator implements AnnotatorConstants  {
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {	
+		setSystemGUIProperties(); 
 		new Annotator(); 
 	}
 
 	/**
-	 * Initialize  the application by adding GUI components.
+	 * Does system specific settings
+	 */
+	private static void setSystemGUIProperties(){
+		boolean IS_MAC = System.getProperty("os.name").toLowerCase().startsWith("mac os x");
+		if(IS_MAC){
+			System.setProperty("apple.laf.useScreenMenuBar", "true");
+			//System.setProperty("com.apple.mrj.application.apple.menu.about.name", "Annotation Tool");
+		}
+		//Set Look & Feel
+		try {
+			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+		} catch (ClassNotFoundException e ) {
+			e.printStackTrace();
+		} catch (InstantiationException e) {
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			e.printStackTrace();
+		} catch (UnsupportedLookAndFeelException e) {
+			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * Initialize  the application by adding GUI components and listeners.
 	 */
 	public Annotator() {
 		EventQueue.invokeLater(new Runnable() {
@@ -80,6 +116,7 @@ public class Annotator implements AnnotatorConstants  {
 					addMainAnnotationFrame(); 	 
 					addMainAnnotationFrameComponents();
 					addMouseListeners();
+					if(isDevMode)loadAbstract(); 
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -89,45 +126,55 @@ public class Annotator implements AnnotatorConstants  {
 
 	}
 
+	/**
+	 * Sets up the main Frame 
+	 */
 	private void addMainAnnotationFrame(){
 		mainAnnotationFrame = new JFrame();
+		mainContentPanel = new JPanel(); 
+		mainContentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
+		mainAnnotationFrame.setContentPane(mainContentPanel);
 		mainAnnotationFrame.setLayout(mainLayout);
 		mainLayout.setHgap(MAIN_LAYOUT_HORIZONTAL_GAP);
 		mainAnnotationFrame.setTitle("Annotation Tool");
-		mainAnnotationFrame.setPreferredSize(MAIN_FRAME_PREFERRED_SIZE);
-		//mainAnnotationFrame.setLocationRelativeTo(null);     
+		mainAnnotationFrame.setPreferredSize(MAIN_FRAME_PREFERRED_SIZE); 
 		mainAnnotationFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		mainAnnotationFrame.setJMenuBar(new MainMenuBar(this)); 
 		mainAnnotationFrame.addComponentListener(new MainAnnotationFrameListener(this));
 		mainAnnotationFrame.pack();
 		mainAnnotationFrame.setVisible(true);
-
 	}
 
 	/**
-	 * Add GUI components to the main Annotation Frame.
+	 * Creates and adds GUI components to the main Frame.
 	 */
 	private void addMainAnnotationFrameComponents(){
-		titlePane = new JPanel();
-		mainAnnotationFrame.add(titlePane, BorderLayout.PAGE_START);
+		mainAnnotationFrameComponents = new AnnotationFrameComponents(this);
 
-		mainAnnotationFrameComponents = new AnnotationFrameComponents(mainAnnotationFrame);
-
+		titlePane = mainAnnotationFrameComponents.createTitlePane(); 
 		annotationTypesGroup = mainAnnotationFrameComponents.createAnnotationTypesListPane(this);
-		mainAnnotationFrame.add(annotationTypesGroup, BorderLayout.LINE_START);
-
 		abstractTextArea = mainAnnotationFrameComponents.createMainAbstractTextArea();
-		mainAnnotationFrame.add(abstractTextArea, BorderLayout.CENTER);
+		annotationDetailsPane = mainAnnotationFrameComponents.createAnnotationDetailsPane(); 
+		footerPane = mainAnnotationFrameComponents.createFooterPane(); 
 
-		rightPane = new JPanel();
-		mainAnnotationFrame.add(rightPane, BorderLayout.LINE_END);
-
-		footerPane = new JPanel();
-		footerPane.add(new JLabel("Footer"));
+		JScrollPane titleScrollPane = new JScrollPane(titlePane,
+								JScrollPane.VERTICAL_SCROLLBAR_NEVER,
+	            				JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS
+	            				); 
+					titleScrollPane.setBorder(null);
+		mainAnnotationFrame.add(titleScrollPane, BorderLayout.PAGE_START);
+		mainAnnotationFrame.add(annotationTypesGroup, BorderLayout.LINE_START);
+		JScrollPane mainTextAreaScrollPane = new JScrollPane(abstractTextArea);
+		mainTextAreaScrollPane.setBorder(null);
+		mainAnnotationFrame.add(mainTextAreaScrollPane, BorderLayout.CENTER);
+		mainAnnotationFrame.add(annotationDetailsPane, BorderLayout.LINE_END);
 		mainAnnotationFrame.add(footerPane, BorderLayout.PAGE_END);
-
 	}
 
+	/**
+	 * Adds mouse event listeners, mainly in the textArea section where
+	 * a lot of work fakes place 
+	 */
 	private void addMouseListeners(){
 		abstractTextArea.addMouseListener(new MouseListener(){
 			@Override
@@ -137,17 +184,15 @@ public class Annotator implements AnnotatorConstants  {
 					displayAnnotationDetails(highlight);
 				}
 			}
-
 			@Override
 			public void mousePressed(MouseEvent e) {
-				// TODO Auto-generated method stub
 
 			}
 
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				if(abstractTextArea.getSelectedText() != null){
-					addAnnotationDetails(abstractTextArea.getSelectedText(), abstractTextArea.getSelectionStart(),  abstractTextArea.getSelectionEnd());
+					addNewAnnotation();
 				}
 			}
 
@@ -158,13 +203,12 @@ public class Annotator implements AnnotatorConstants  {
 
 			@Override
 			public void mouseExited(MouseEvent e) {
-				// TODO Auto-generated method stub
+
 			}
 
 		});	
 
 	}
-
 
 	/**
 	 * Returns the Highlight in which a selected text belongs, null otherwise
@@ -181,133 +225,94 @@ public class Annotator implements AnnotatorConstants  {
 		return null; 
 	}
 
-	//TODO: Displaying details of an in-line Annotation when the outlining one is deleted --Seems buggy
+	/**
+	 * Displays details of a selected annotation on the right pane
+	 * @param highlight the selected, and highlighted, annotation. 
+	 * This is passed as an Highlight object because it's easier 
+	 * to work with  
+	 */
 	private void displayAnnotationDetails(Highlight highlight){
-		highlight.getStartOffset();
-		Annotation selectedAnnotation = currentAbstract.getAnnotation(highlight.getStartOffset(), highlight.getEndOffset());
-		String[] options = {"Cancel","Edit", "Delete"}; 
-		String msg = "Type: " + selectedAnnotation.getType() + "\n"; 
+		cleanUpPane(annotationDetailsPane); 
+		Annotation selectedAnnotation = currentAbstract.getAnnotation(
+													  highlight.getStartOffset(), 
+													  highlight.getEndOffset());
+		JPanel annotationDetails = new JPanel(); 
+		annotationDetails.setLayout(new BoxLayout(annotationDetails, BoxLayout.Y_AXIS));
+		annotationDetails.setBackground(selectedAnnotation.getColor());
+		annotationDetails.add(new JLabel("Type: " + selectedAnnotation.getType()));
+
 		Map<String, String> attributes = selectedAnnotation.getAttributes(); 
 		if(attributes != null){
 			for(String attrName: attributes.keySet()){
-				msg += attrName + ": " + attributes.get(attrName) + "\n";
+				annotationDetails.add(new JLabel(attrName + ":" + attributes.get(attrName)));
 			}
 		}else{
-			msg += "--No Attributes--"; 
+			annotationDetails.add(new JLabel("-No Attributes-"));
 		}
 
-		int n = JOptionPane.showOptionDialog(mainAnnotationFrame,
-				msg, 
-				"Annotation Details", 
-				JOptionPane.YES_NO_CANCEL_OPTION, 
-				JOptionPane.QUESTION_MESSAGE, 
-				null, 
-				options, 
-				options[0]);
+		annotationDetails.setAlignmentX(Component.CENTER_ALIGNMENT);
+		annotationDetailsPane.add(annotationDetails);
 
-		if(n == 1){ //Edit
-			editAnnotation(selectedAnnotation, highlight);
-		}else if(n == 2){ //Delete
-			deleteAnnotation(selectedAnnotation, highlight, false); 
-		}
+		mainAnnotationFrameComponents.addAnnotationDetailsPaneButtons(this,
+																	selectedAnnotation,
+																	highlight); 
+		mainAnnotationFrame.validate();
 	}
 
-	private void markAsEdited(String title){	
+	/**
+	 * Updates the title to notify the user that the file is edited
+	 * @param title
+	 */
+	public void markAsEdited(String title){	
 		if(!isEdited)mainAnnotationFrame.setTitle(title);
 		isEdited = true; 
 	}
 
-	private void editAnnotation(Annotation annotation, Highlight highlight){
-		//TODO: Write independent, more optimized code for editing 
-		deleteAnnotation(annotation, highlight, true);
-		addAnnotationDetails(annotation.getText(), annotation.getStart(), annotation.getEnd());
-		markAsEdited("*" + mainAnnotationFrame.getTitle()); 	
-	}
-
-	private void deleteAnnotation(Annotation annotation, Highlight highlight, boolean isEdit){
+	/**
+	 * Removes a selected annotation
+	 * @param annotation the selected annotation
+	 * @param highlight a tag to identify the selected annotation 
+	 */
+	public void deleteAnnotation(Annotation annotation, Highlight highlight){
 		int n = 0; 
-		if(!isEdit){
-			n = JOptionPane.showConfirmDialog(mainAnnotationFrame, 
-					"Are you sure?", 
-					"Delete Annotation", 
-					JOptionPane.YES_NO_OPTION);
-		}
 
+		n = JOptionPane.showConfirmDialog(mainAnnotationFrame, 
+				"Are you sure?", 
+				"Delete Annotation", 
+				JOptionPane.YES_NO_OPTION);
 		if(n == 0){
 			if(currentAbstract.deleteAnnotation(annotation)){
 				abstractTextAreahighlighter.removeHighlight(highlight);
 			}	
 		}
 		markAsEdited(mainAnnotationFrame.getTitle() + "*");
+		annotationDetailsPane.removeAll();
+		annotationDetailsPane.revalidate();
+		annotationDetailsPane.repaint();
 	}
 
-	private void addAnnotationDetails(String selectedText, int selectedTextStartIndex, int selectedTextEndIndex){
-		Map<String, Map<String, ArrayList<String>>> schemeAnnotationElements = currentAbstract.getSchemeAnnotationElements();
-		Vector<String> annotationTypes = new Vector<String>() ; 	
-		for(String type : schemeAnnotationElements.keySet()){
-			annotationTypes.add(type);
-		}
-		JPanel annotationDetailsPanel = new JPanel();
-		annotationDetailsPanel.setLayout(new BoxLayout(annotationDetailsPanel, BoxLayout.Y_AXIS));
-		annotationDetailsPanel.add(new JLabel("Selected Text: "+selectedText + "\n"));
-
-		JComboBox<String> annotationTypeOptions = new JComboBox<String>(annotationTypes);
-		annotationDetailsPanel.add(annotationTypeOptions);
-
-		int option =  JOptionPane.showConfirmDialog(mainAnnotationFrame,
-				annotationDetailsPanel, 
-				"Add Annotation", 
-				JOptionPane.OK_CANCEL_OPTION, 
-				JOptionPane.PLAIN_MESSAGE, 
-				null);
-		String typeName ="";
-		if(option == JOptionPane.OK_OPTION){
-			typeName  = (String)annotationTypeOptions.getSelectedItem();
-			Map<String, String> attributes = getAnnotationAttributes(schemeAnnotationElements.get(typeName));
-			currentAbstract.addAnnotation(typeName, selectedText, attributes,selectedTextStartIndex,selectedTextEndIndex);
-		}
-
-		HighlightPainter painter = new DefaultHighlighter.DefaultHighlightPainter(currentAbstract.getAnnotationTypes().get(typeName));
-		try {
-			Highlight tag = (Highlight) abstractTextAreahighlighter.addHighlight( selectedTextStartIndex, selectedTextEndIndex, painter);
-			abstractHighlightTags.add(tag);
-		} catch (BadLocationException e) {
-			e.printStackTrace();
-		}
-		markAsEdited("*" + mainAnnotationFrame.getTitle() ); 
+	/**
+	 * Adds a new annotation
+	 */
+	private void addNewAnnotation(){	
+		cleanUpPane(annotationDetailsPane);
+		mainAnnotationFrameComponents.createAnnotationAdditionPane();		
+		mainAnnotationFrame.validate();
 	}
-
-
-	private Map<String, String> getAnnotationAttributes(Map<String, ArrayList<String>> schemeAnnotationAttributes){
-		if(schemeAnnotationAttributes == null)return null; 
-		Map<String, String> attributes = new HashMap<String, String>(); 
-		for(String attrName : schemeAnnotationAttributes.keySet()){
-			String attrValue = ""; 
-			ArrayList<String> schemeAnnotationAttributeOptions = schemeAnnotationAttributes.get(attrName);
-			if(schemeAnnotationAttributeOptions != null){
-				String[] options = schemeAnnotationAttributeOptions.toArray(new String[schemeAnnotationAttributeOptions.size()]);
-				attrValue = (String)JOptionPane.showInputDialog(
-						mainAnnotationFrame,
-						attrName + ":\n",
-						"Customized Dialog",
-						JOptionPane.PLAIN_MESSAGE,
-						null,
-						options,
-						schemeAnnotationAttributeOptions.get(0)
-						);
-			}else{
-				attrValue = JOptionPane.showInputDialog(attrName + ":");
-			}
-			attributes.put(attrName, attrValue);
-		}	
-		return attributes; 
-	}
-
-
+	
+	/**
+	 * Read and display an annotation scheme file 
+	 * @param schemeSrcFile a file read from the client's disk 
+	 */
 	public void loadSchemeFile(File schemeSrcFile){
 		annotationScheme = new AnnotationScheme(schemeSrcFile); 
 	}
 
+	/**
+	 * Read and display and abstract based on a given scheme file
+	 * If the scheme file is not set, a default Scheme file
+	 * (named defaultSchemeFile.xml) is used
+	 */
 	public void loadAbstract(){
 		if(annotationScheme == null)
 			loadSchemeFile(new File("resources/defaultScheme.xml"));
@@ -315,8 +320,11 @@ public class Annotator implements AnnotatorConstants  {
 		File abstractSrcFile = XmlFile.selectSrcFile(); 
 		currentXMLFile = new XmlFile(abstractSrcFile);
 		Element targetAbstract = currentXMLFile.getAbstractElement(); 
-		String title = currentXMLFile.getInDocumentTitle(); 
+		String title = currentXMLFile.getInDocumentTitle();
+
+		titlePane.removeAll();
 		titlePane.add(new JLabel(title));
+
 		currentAbstract = new Abstract(targetAbstract,title, annotationScheme);
 		Map<String, String> curAbstractSections = currentAbstract.getSections();
 		abstractTextArea.setText("");
@@ -328,20 +336,32 @@ public class Annotator implements AnnotatorConstants  {
 		setHighlightedAnnotationTypes();
 		highlightAnnotations(highlightedAnnotationTypes);
 		addAnnotationTypesList(); 
+		updateGUI(); 
 	}
-	
+
+	/**
+	 * Prepares a list of all possible annotation types
+	 */
 	private void setHighlightedAnnotationTypes(){
 		highlightedAnnotationTypes = new HashSet<String>(); 
 		highlightedAnnotationTypes = currentAbstract.getAnnotationTypesSet();
 	}
 
+	/**
+	 * Set the title at the top of the window based on the loaded file
+	 * @param loadedFile the file containing content to be annotated
+	 */
 	private void setMainTitle(File loadedFile){
 		mainAnnotationFrameTitle = "Annotation Tool - "; 
 		mainAnnotationFrameTitle += loadedFile.getName();  
 		mainAnnotationFrame.setTitle(mainAnnotationFrameTitle);
 	}
 
-
+	/**
+	 * Use a variety of colors, based on the annotation scheme, to highlight 
+	 * annotations on screen
+	 * @param highlightedAnnotationTypes all possible annotation types that can be annotated
+	 */
 	private void highlightAnnotations(Set<String> highlightedAnnotationTypes){
 		abstractHighlightTags = new ArrayList<Highlight>();
 		try{
@@ -361,17 +381,18 @@ public class Annotator implements AnnotatorConstants  {
 		}
 	}
 
+	/**
+	 * Provides a visual updates when a user adds or removes an annotation
+	 * @param highlightedAnnotationTypes
+	 */
 	public void updateHighlightedAnnotations(Set<String> highlightedAnnotationTypes) {
 		abstractTextAreahighlighter.removeAllHighlights();
 		highlightAnnotations(highlightedAnnotationTypes); 
 	}
 
-
-	public ArrayList<Highlight> getAbstractHighlightTags(){
-		return this.abstractHighlightTags;
-	}
-
-
+	/**
+	 * Displays or removes all highlights from the screen
+	 */
 	public void toogleAllAnnotationTypes(){
 		if(!getHighlight){
 			highlightAnnotations(highlightedAnnotationTypes);
@@ -382,17 +403,18 @@ public class Annotator implements AnnotatorConstants  {
 		}
 	}
 
-	public void toogleSingleAnnotationType(){
-
-	}
-
-
+	/**
+	 * Saves all changes to the target file
+	 */
 	public void saveAllAnnotations(){
 		currentAbstract.saveXMLAbstract(currentXMLFile);
 		mainAnnotationFrame.setTitle(mainAnnotationFrameTitle);
 		isEdited = false;
 	}
 
+	/**
+	 * Updates the left pane with all the possible types of annotations
+	 */
 	private void addAnnotationTypesList(){	
 		annotationTypesGroup.cleanContentPane();
 		Map<String, Color> annotationTypes = annotationScheme.getAnnotationTypes(); 
@@ -402,9 +424,51 @@ public class Annotator implements AnnotatorConstants  {
 		annotationTypesGroup.showAllAnnotationTypes();
 	}
 
+	/**
+	 * Removes all contents from a given JPanel
+	 * @param pane the JPanel to clear
+	 */
+	private void cleanUpPane(JPanel pane){
+		pane.removeAll();
+		pane.revalidate();
+		pane.repaint();
+	}
 
+	/**
+	 * Displays components to the main Frame when components are added
+	 * or removed
+	 */
+	public void updateGUI(){
+		mainAnnotationFrame.revalidate(); 
+		mainAnnotationFrame.repaint(); 
+	}
+	/***********************************************
+	 *  GETTERS                        
+	 * @return private_var Returns private variables 
+	 * for use in other classes 
+	 ***********************************************/
+	
+	public Abstract getCurrentAbstract(){
+		return this.currentAbstract; 
+	}
+	
+	public JPanel getAnnotationDetailsPane(){
+		return this.annotationDetailsPane;
+	}
+	
+	public JFrame getMainAnnotationFrame(){
+		return this.mainAnnotationFrame; 
+	}
 
-
-
-
+	public JTextArea getAbstractTextArea(){
+		return this.abstractTextArea; 
+	}
+	
+	public Highlighter getAbstractTextAreahighlighter(){
+		return this.abstractTextAreahighlighter; 
+	}
+	
+	public ArrayList<Highlight> getAbstractHighlightTags(){
+		return this.abstractHighlightTags;
+	}
 }

@@ -10,7 +10,7 @@ public class Annotation{
 	private int id; 
 	private String plainAbstract; 
 	private Map<String, String> attributes;
-	private Color color; //Change to color Object
+	private Color color; 
 
 	private static int startSearchIndex = 0; //Keeps track of the position, in the abstract, to start searching for an annotation text.
 

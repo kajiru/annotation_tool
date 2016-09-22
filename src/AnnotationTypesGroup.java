@@ -13,12 +13,7 @@ import java.util.List;
 import java.util.Set;
 
 import javax.swing.JCheckBox;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JSeparator;
-import javax.swing.SwingConstants;
-import javax.swing.UIManager;
-import javax.swing.border.Border;
 import javax.swing.border.EmptyBorder;
 
 public class AnnotationTypesGroup extends JPanel implements ItemListener{
@@ -36,14 +31,14 @@ public class AnnotationTypesGroup extends JPanel implements ItemListener{
 		setAnnotationTypesTags(); 
 		checkBoxes = new ArrayList<>();
 		setLayout(new BorderLayout());
-		setBorder(new EmptyBorder(10, 10, 10, 10));
+		setBorder(new EmptyBorder(10, 10, 10, 10)); //Arbitrary Padding
 		header = new JPanel(new FlowLayout(FlowLayout.LEFT, 1, 1));
 
 		all = new JCheckBox("Show All");
 		all.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				for (JCheckBox cb : checkBoxes) {
+				for(JCheckBox cb : checkBoxes) {
 					cb.setSelected(all.isSelected());
 				}
 				annotator.toogleAllAnnotationTypes();
@@ -51,6 +46,7 @@ public class AnnotationTypesGroup extends JPanel implements ItemListener{
 		});
 		header.add(all);
 		add(header, BorderLayout.NORTH);
+		//add(BorderLayout.CENTER, new JSeparator(SwingConstants.HORIZONTAL));
 
 		content = new JPanel(new GridBagLayout());
 		add(content);
@@ -100,7 +96,6 @@ public class AnnotationTypesGroup extends JPanel implements ItemListener{
 				highlightedAnnotationTypes.add(annotationTypesTags.get(index));
 			index++; 	
 		}
-		System.out.println(highlightedAnnotationTypes);
 		annotator.updateHighlightedAnnotations(highlightedAnnotationTypes); 
 	}
 

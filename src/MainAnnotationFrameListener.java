@@ -6,6 +6,7 @@ import javax.swing.JFrame;
 public class MainAnnotationFrameListener implements ComponentListener {
 
 	Annotator annotator; //
+	JFrame mainFrame; 
 
 	public MainAnnotationFrameListener(Annotator annotator){
 		this.annotator = annotator; 
@@ -13,8 +14,7 @@ public class MainAnnotationFrameListener implements ComponentListener {
 
 	@Override
 	public void componentResized(ComponentEvent e) {
-		JFrame mainFrame = (JFrame) e.getComponent();
-		//annotator.resizeComponents(mainFrame.getHeight(), mainFrame.getWidth());
+		mainFrame = (JFrame) e.getComponent();
 	}
 
 	@Override
