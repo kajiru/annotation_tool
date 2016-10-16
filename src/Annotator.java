@@ -53,7 +53,7 @@ public class Annotator implements AnnotatorConstants  {
 	private AnnotationScheme annotationScheme = null; 
 	private Abstract currentAbstract; 
 	private XmlFile currentXMLFile; 
-	private Highlighter abstractTextAreahighlighter; 
+	private Highlighter mainTextAreahighlighter; 
 	private boolean getHighlight = true; //true = annotations are highlighted 
 	private ArrayList<Highlight> abstractHighlightTags;
 	private String mainAnnotationFrameTitle;
@@ -70,7 +70,7 @@ public class Annotator implements AnnotatorConstants  {
 	//Five main sections within the BoarderLayout
 	private JPanel titlePane;
 	private AnnotationTypesGroup annotationTypesGroup = null; //Annotations Types List
-	private JTextArea abstractTextArea;
+	private JTextArea mainTextArea;
 	private JPanel annotationDetailsPane;
 	private JPanel footerPane;
 
@@ -116,6 +116,7 @@ public class Annotator implements AnnotatorConstants  {
 					addMainAnnotationFrame(); 	 
 					addMainAnnotationFrameComponents();
 					addMouseListeners();
+					displayUserGuide(); 
 					if(isDevMode)loadAbstract(); 
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -125,6 +126,18 @@ public class Annotator implements AnnotatorConstants  {
 
 
 	}
+	
+	/**
+	 * Shows basic instructions to help a user get started using the application
+	 */
+	private void displayUserGuide(){
+		String guideTxt  = "Welcome." +" \n" + "This is a simple tool designed to make "; 
+			   guideTxt	+= "the annotation of medical research abstracts simple and easy.\n"; 
+			   guideTxt += "Noet: Currently the program works with XML files from PubMed. ";
+		
+		mainTextArea.append(guideTxt);		
+	} 
+	
 
 	/**
 	 * Sets up the main Frame 
@@ -153,7 +166,7 @@ public class Annotator implements AnnotatorConstants  {
 
 		titlePane = mainAnnotationFrameComponents.createTitlePane(); 
 		annotationTypesGroup = mainAnnotationFrameComponents.createAnnotationTypesListPane(this);
-		abstractTextArea = mainAnnotationFrameComponents.createMainAbstractTextArea();
+		mainTextArea = mainAnnotationFrameComponents.createMainTextArea();
 		annotationDetailsPane = mainAnnotationFrameComponents.createAnnotationDetailsPane(); 
 		footerPane = mainAnnotationFrameComponents.createFooterPane(); 
 
@@ -164,7 +177,7 @@ public class Annotator implements AnnotatorConstants  {
 					titleScrollPane.setBorder(null);
 		mainAnnotationFrame.add(titleScrollPane, BorderLayout.PAGE_START);
 		mainAnnotationFrame.add(annotationTypesGroup, BorderLayout.LINE_START);
-		JScrollPane mainTextAreaScrollPane = new JScrollPane(abstractTextArea);
+		JScrollPane mainTextAreaScrollPane = new JScrollPane(mainTextArea);
 		mainTextAreaScrollPane.setBorder(null);
 		mainAnnotationFrame.add(mainTextAreaScrollPane, BorderLayout.CENTER);
 		mainAnnotationFrame.add(annotationDetailsPane, BorderLayout.LINE_END);
@@ -176,7 +189,7 @@ public class Annotator implements AnnotatorConstants  {
 	 * a lot of work fakes place 
 	 */
 	private void addMouseListeners(){
-		abstractTextArea.addMouseListener(new MouseListener(){
+		mainTextArea.addMouseListener(new MouseListener(){
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				Highlight highlight  = getHighlight(); 
@@ -191,14 +204,14 @@ public class Annotator implements AnnotatorConstants  {
 
 			@Override
 			public void mouseReleased(MouseEvent e) {
-				if(abstractTextArea.getSelectedText() != null){
+				if(mainTextArea.getSelectedText() != null){
 					addNewAnnotation();
 				}
 			}
 
 			@Override
 			public void mouseEntered(MouseEvent e) {
-				abstractTextArea.setCursor(new Cursor(Cursor.TEXT_CURSOR));
+				mainTextArea.setCursor(new Cursor(Cursor.TEXT_CURSOR));
 			}
 
 			@Override
@@ -214,8 +227,8 @@ public class Annotator implements AnnotatorConstants  {
 	 * Returns the Highlight in which a selected text belongs, null otherwise
 	 * */
 	private Highlight getHighlight(){
-		int selectionStart = abstractTextArea.getSelectionStart();
-		int selectionEnd = abstractTextArea.getSelectionEnd();		
+		int selectionStart = mainTextArea.getSelectionStart();
+		int selectionEnd = mainTextArea.getSelectionEnd();		
 		for(int i = 0; i < abstractHighlightTags.size(); i++){
 			Highlight cur = abstractHighlightTags.get(i);
 			if((selectionStart > cur.getStartOffset()) && (selectionEnd  < cur.getEndOffset())){
@@ -282,7 +295,7 @@ public class Annotator implements AnnotatorConstants  {
 				JOptionPane.YES_NO_OPTION);
 		if(n == 0){
 			if(currentAbstract.deleteAnnotation(annotation)){
-				abstractTextAreahighlighter.removeHighlight(highlight);
+				mainTextAreahighlighter.removeHighlight(highlight);
 			}	
 		}
 		markAsEdited(mainAnnotationFrame.getTitle() + "*");
@@ -318,6 +331,7 @@ public class Annotator implements AnnotatorConstants  {
 			loadSchemeFile(new File("resources/defaultScheme.xml"));
 
 		File abstractSrcFile = XmlFile.selectSrcFile(); 
+		if(abstractSrcFile == null) return; 
 		currentXMLFile = new XmlFile(abstractSrcFile);
 		Element targetAbstract = currentXMLFile.getAbstractElement(); 
 		String title = currentXMLFile.getInDocumentTitle();
@@ -327,10 +341,10 @@ public class Annotator implements AnnotatorConstants  {
 
 		currentAbstract = new Abstract(targetAbstract,title, annotationScheme);
 		Map<String, String> curAbstractSections = currentAbstract.getSections();
-		abstractTextArea.setText("");
+		mainTextArea.setText("");
 		for(String sectionName : curAbstractSections.keySet()){
-			abstractTextArea.append(curAbstractSections.get(sectionName));
-			//abstractTextArea.append("\n");
+			mainTextArea.append(curAbstractSections.get(sectionName));
+			//mainTextArea.append("\n");
 		}
 		setMainTitle(abstractSrcFile); 
 		setHighlightedAnnotationTypes();
@@ -365,13 +379,13 @@ public class Annotator implements AnnotatorConstants  {
 	private void highlightAnnotations(Set<String> highlightedAnnotationTypes){
 		abstractHighlightTags = new ArrayList<Highlight>();
 		try{
-			abstractTextAreahighlighter = abstractTextArea.getHighlighter();
+			mainTextAreahighlighter = mainTextArea.getHighlighter();
 			Map<String, LinkedHashSet<Annotation>> annotations = currentAbstract.getAnnotations();
 			for(String key : annotations.keySet()){ 
 				if(highlightedAnnotationTypes.contains(key)){
 					for(Annotation annotation : annotations.get(key)){
 						HighlightPainter painter = new DefaultHighlighter.DefaultHighlightPainter(annotation.getColor());
-						Highlight tag = (Highlight) abstractTextAreahighlighter.addHighlight(annotation.getStart(), annotation.getEnd(), painter);
+						Highlight tag = (Highlight) mainTextAreahighlighter.addHighlight(annotation.getStart(), annotation.getEnd(), painter);
 						abstractHighlightTags.add(tag);
 					}	
 				}				
@@ -386,7 +400,7 @@ public class Annotator implements AnnotatorConstants  {
 	 * @param highlightedAnnotationTypes
 	 */
 	public void updateHighlightedAnnotations(Set<String> highlightedAnnotationTypes) {
-		abstractTextAreahighlighter.removeAllHighlights();
+		mainTextAreahighlighter.removeAllHighlights();
 		highlightAnnotations(highlightedAnnotationTypes); 
 	}
 
@@ -398,7 +412,7 @@ public class Annotator implements AnnotatorConstants  {
 			highlightAnnotations(highlightedAnnotationTypes);
 			getHighlight = true;
 		}else{
-			abstractTextAreahighlighter.removeAllHighlights();
+			mainTextAreahighlighter.removeAllHighlights();
 			getHighlight = false;
 		}
 	}
@@ -407,6 +421,7 @@ public class Annotator implements AnnotatorConstants  {
 	 * Saves all changes to the target file
 	 */
 	public void saveAllAnnotations(){
+		if(currentAbstract == null)return; //If nothing is loaded
 		currentAbstract.saveXMLAbstract(currentXMLFile);
 		mainAnnotationFrame.setTitle(mainAnnotationFrameTitle);
 		isEdited = false;
@@ -435,8 +450,8 @@ public class Annotator implements AnnotatorConstants  {
 	}
 
 	/**
-	 * Displays components to the main Frame when components are added
-	 * or removed
+	 * Displays components to the main Frame when components are 
+	 * added or removed
 	 */
 	public void updateGUI(){
 		mainAnnotationFrame.revalidate(); 
@@ -460,12 +475,12 @@ public class Annotator implements AnnotatorConstants  {
 		return this.mainAnnotationFrame; 
 	}
 
-	public JTextArea getAbstractTextArea(){
-		return this.abstractTextArea; 
+	public JTextArea getMainTextArea(){
+		return this.mainTextArea; 
 	}
 	
-	public Highlighter getAbstractTextAreahighlighter(){
-		return this.abstractTextAreahighlighter; 
+	public Highlighter getMainTextAreahighlighter(){
+		return this.mainTextAreahighlighter; 
 	}
 	
 	public ArrayList<Highlight> getAbstractHighlightTags(){
